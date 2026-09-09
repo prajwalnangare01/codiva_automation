@@ -1,7 +1,19 @@
 {
-  "currentIndex": 0,
-  "totalPosted": 0,
-  "history": [],
-  "lastPostedTopic": null,
-  "lastPostedAt": null
+  "currentIndex": 1,
+  "totalPosted": 1,
+  "history": [
+    {
+      "index": 0,
+      "day": 1,
+      "slot": 1,
+      "headline": "HTML document structure",
+      "permalink": "https://instagram.com/codiva_labs (Simulation)",
+      "imageUrl": "https://iili.io/nF186Xa.png",
+      "postedAt": "2026-09-09T12:14:25.576Z"
+    }
+  ],
+  "lastPostedTopic": "HTML document structure",
+  "lastPostedAt": "2026-09-09T12:14:25.576Z",
+  "lastPermalink": "https://instagram.com/codiva_labs (Simulation)",
+  "lastImageUrl": "https://iili.io/nF186Xa.png"
 }
