@@ -1,0 +1,10 @@
+{
+  "scripts": {
+    "start": "node scripts/publish_autonomous.js",
+    "publish": "node scripts/publish_autonomous.js",
+    "renderer": "node scripts/renderer_service.js"
+  },
+  "dependencies": {
+    "@resvg/resvg-js": "^2.6.2"
+  }
+}

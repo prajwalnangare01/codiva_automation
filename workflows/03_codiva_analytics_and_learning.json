@@ -1,0 +1,160 @@
+{
+  "name": "Codiva — 03 Analytics & Performance Learning",
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata",
+    "saveManualExecutions": true
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 20 * * 0"
+            }
+          ]
+        }
+      },
+      "id": "node-weekly-trigger",
+      "name": "Weekly Analytics Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -600,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "node-manual-analytics",
+      "name": "Manual Analytics Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -600,
+        -160
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ==========================================\n// SIMULATED HISTORICAL ANALYTICS AGGREGATOR\n// ==========================================\nconst historicalData = [\n  { pillar: \"Memes & Agency Culture\", format: \"meme\", saves: 42, shares: 185, reach: 2400, comments: 28 },\n  { pillar: \"Web Development Education\", format: \"infographic\", saves: 194, shares: 76, reach: 3100, comments: 19 },\n  { pillar: \"UI/UX & Web Design\", format: \"ui_showcase\", saves: 148, shares: 52, reach: 2800, comments: 15 },\n  { pillar: \"Codiva Promotion & Showcase\", format: \"project_showcase\", saves: 65, shares: 34, reach: 1900, comments: 24, inbound_dms: 4 },\n  { pillar: \"Business & Website Advice\", format: \"editorial_graphic\", saves: 110, shares: 45, reach: 2100, comments: 12 }\n];\n\nreturn [{\n  json: {\n    period: \"Last 30 Days\",\n    total_posts: 18,\n    metrics_summary: historicalData,\n    calculated_at: new Date().toISOString()\n  }\n}];\n"
+      },
+      "id": "node-fetch-analytics",
+      "name": "Fetch Performance Metrics",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -340,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{\n\"Analyze Codiva's historical social media performance and generate actionable strategy recommendations for future posts.\n\nMETRICS DATA:\n\" + JSON.stringify($json.metrics_summary) + \"\n\nOUTPUT STRICT JSON ONLY:\n{\n  \\\"top_performing_pillars\\\": [\\\"Web Development Education (highest saves)\\\", \\\"Memes & Agency Culture (highest shares)\\\"],\n  \\\"top_performing_formats\\\": [\\\"infographics\\\", \\\"developer memes\\\", \\\"ui_showcase\\\"],\n  \\\"underperforming_patterns\\\": [\\\"Generic business tips with text-only visuals\\\"],\n  \\\"strategic_adjustments\\\": [\n    \\\"Increase Web Development performance breakdowns by 5%\\\",\n    \\\"Maintain meme sharing angle on Thursday/Friday\\\",\n    \\\"Incorporate before/after visuals for client showcase posts to increase inbound inquiries\\\"\n  ]\n}\"\n}}",
+        "options": {
+          "systemMessage": "You are the Social Media Data Scientist and Performance Strategist for Codiva. Evaluate content metrics and output clear, strategic recommendations in strict JSON only."
+        }
+      },
+      "id": "node-strategy-learner-ai",
+      "name": "Strategy Learner AI",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -80,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "node-gemini-model-analytics",
+      "name": "Google Gemini Chat Model (Analytics)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -80,
+        140
+      ],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "bkKuJdCogQz1kFvS",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "\nlet insightsRaw = $json.output || \"\";\ninsightsRaw = insightsRaw.replace(/```json/gi, \"\").replace(/```/g, \"\").trim();\n\nlet insights;\ntry {\n  insights = JSON.parse(insightsRaw);\n} catch (e) {\n  insights = {\n    top_performing_pillars: [\"Web Development Education\", \"Memes & Agency Culture\"],\n    top_performing_formats: [\"infographics\", \"developer memes\"],\n    underperforming_patterns: [\"Generic advice without concrete examples\"],\n    strategic_adjustments: [\"Focus on high-save educational carousels and relatable agency humor\"]\n  };\n}\n\nreturn [{\n  json: {\n    success: true,\n    message: \"Strategy insights updated successfully!\",\n    insights: insights,\n    updated_at: new Date().toISOString()\n  }\n}];\n"
+      },
+      "id": "node-store-insights",
+      "name": "Store Strategy Insights",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        180,
+        -80
+      ]
+    }
+  ],
+  "connections": {
+    "Weekly Analytics Trigger": {
+      "main": [
+        [
+          {
+            "node": "Fetch Performance Metrics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Analytics Trigger": {
+      "main": [
+        [
+          {
+            "node": "Fetch Performance Metrics",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Fetch Performance Metrics": {
+      "main": [
+        [
+          {
+            "node": "Strategy Learner AI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model (Analytics)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Strategy Learner AI",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Strategy Learner AI": {
+      "main": [
+        [
+          {
+            "node": "Store Strategy Insights",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

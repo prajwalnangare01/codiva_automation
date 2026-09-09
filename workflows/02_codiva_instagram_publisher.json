@@ -1,0 +1,220 @@
+{
+  "name": "Codiva — 02 Instagram Publisher",
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata",
+    "saveManualExecutions": true
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "GET",
+        "path": "publish-codiva-post",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "id": "node-webhook-trigger",
+      "name": "Approval Webhook Trigger",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [
+        -600,
+        0
+      ],
+      "webhookId": "publish-codiva-post"
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ==========================================\n// VALIDATE APPROVAL & CHECK SAFETY SWITCH\n// ==========================================\nconst query = $json.query || {};\nconst action = query.action || \"approve\";\nconst postId = query.post_id || \"POST-LATEST\";\n\n// Safety Mode Flag\nconst TEST_MODE = true; // Set to false when ready for live Instagram publishing\n\nif (action === \"reject\") {\n  return [{\n    json: {\n      status: \"rejected\",\n      post_id: postId,\n      message: \"Post was rejected by human reviewer. No publishing occurred.\"\n    }\n  }];\n}\n\nif (action === \"regenerate\") {\n  return [{\n    json: {\n      status: \"regenerate_requested\",\n      post_id: postId,\n      message: \"Regeneration requested. Triggering new daily strategy run.\"\n    }\n  }];\n}\n\nreturn [{\n  json: {\n    status: \"approved\",\n    post_id: postId,\n    test_mode: TEST_MODE,\n    caption: query.caption || \"Crafting modern digital experiences that scale with your business. #Codiva #WebDev #NextJS\",\n    image_url: query.image_url || \"https://images.unsplash.com/photo-1555066931-4365d14bab8c?w=1080&auto=format&fit=crop&q=80\",\n    ig_user_id: \"17841475951559107\",\n    timestamp: new Date().toISOString()\n  }\n}];\n"
+      },
+      "id": "node-validate-approval",
+      "name": "Validate Approval & Safety Mode",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -360,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.test_mode }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "node-check-test-mode",
+      "name": "Is TEST_MODE Active?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        -120,
+        0
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// TEST MODE SIMULATION\nreturn [{\n  json: {\n    success: true,\n    test_mode: true,\n    message: \"TEST_MODE is enabled: Post approved and simulated successfully without charging live Instagram API.\",\n    post_id: $json.post_id,\n    simulated_instagram_media_id: \"SIMULATED_IG_\" + Date.now(),\n    caption: $json.caption,\n    image_url: $json.image_url,\n    published_at: new Date().toISOString()\n  }\n}];\n"
+      },
+      "id": "node-test-mode-simulator",
+      "name": "Simulated Test Mode Success",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        160,
+        -100
+      ]
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "v23.0",
+        "node": "={{ $json.ig_user_id }}",
+        "edge": "media",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "image_url",
+                "value": "={{ $json.image_url }}"
+              },
+              {
+                "name": "caption",
+                "value": "={{ $json.caption }}"
+              }
+            ]
+          }
+        }
+      },
+      "id": "node-ig-create-container",
+      "name": "Instagram Create Media Container",
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        160,
+        100
+      ],
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "1KpPi6PzgdqymOwm",
+          "name": "Facebook Graph account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 20
+      },
+      "id": "node-wait-media",
+      "name": "Wait For Media Processing",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        400,
+        100
+      ]
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "v23.0",
+        "node": "=17841475951559107",
+        "edge": "media_publish",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "creation_id",
+                "value": "={{ $json.id }}"
+              }
+            ]
+          }
+        }
+      },
+      "id": "node-ig-publish-media",
+      "name": "Instagram Publish Live Media",
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        640,
+        100
+      ],
+      "retryOnFail": true,
+      "waitBetweenTries": 5000,
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "1KpPi6PzgdqymOwm",
+          "name": "Facebook Graph account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Approval Webhook Trigger": {
+      "main": [
+        [
+          {
+            "node": "Validate Approval & Safety Mode",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Validate Approval & Safety Mode": {
+      "main": [
+        [
+          {
+            "node": "Is TEST_MODE Active?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Is TEST_MODE Active?": {
+      "main": [
+        [
+          {
+            "node": "Simulated Test Mode Success",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Instagram Create Media Container",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Instagram Create Media Container": {
+      "main": [
+        [
+          {
+            "node": "Wait For Media Processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Wait For Media Processing": {
+      "main": [
+        [
+          {
+            "node": "Instagram Publish Live Media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

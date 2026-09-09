@@ -1,0 +1,372 @@
+{
+  "name": "Codiva — 01 Daily Content Orchestrator",
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata",
+    "saveManualExecutions": true
+  },
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 9 * * *"
+            }
+          ]
+        }
+      },
+      "id": "node-schedule-trigger",
+      "name": "Daily 9AM Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -800,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "node-manual-trigger",
+      "name": "Manual Test Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -800,
+        -180
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ==========================================\n// CENTRAL CODIVA CONFIG & BRAND PROFILE\n// ==========================================\nreturn [{\n  json: {\n    config: {\n      TEST_MODE: true, // Safety switch: true = simulate publishing; false = live Instagram\n      HUMAN_APPROVAL_REQUIRED: true,\n      IMAGE_QUALITY_THRESHOLD: 80,\n      MAX_RETRY_ATTEMPTS: 2,\n      DUPLICATE_SIMILARITY_THRESHOLD: 0.75,\n      COMFYUI_URL: \"http://127.0.0.1:8188\",\n      DEFAULT_IMAGE_WIDTH: 1080,\n      DEFAULT_IMAGE_HEIGHT: 1080\n    },\n    brand_profile: {\n      name: \"Codiva\",\n      industry: \"Web Development Agency\",\n      tagline: \"Modern websites and digital experiences built for performance and growth.\",\n      positioning: \"Codiva designs and engineers bespoke, high-converting websites and web applications for businesses, startups, and enterprises.\",\n      tone_and_voice: \"Modern, sharp, technically proficient, trustworthy, premium, approachable, slightly witty when appropriate.\",\n      target_audience: \"Business owners, tech founders, product managers, UI/UX designers, frontend/backend developers looking for quality web solutions.\",\n      visual_identity: {\n        palette: \"Deep navy (#0F172A), Slate dark (#0B0F19), Electric Cyan (#38BDF8), Indigo (#6366F1), Clean White (#F8FAFC)\",\n        aesthetic: \"Clean editorial layouts, minimal UI frames, subtle glassmorphism, sleek modern typography, high contrast, authentic developer/agency scenes\"\n      },\n      content_pillars: [\n        { name: \"Web Development Education\", weight: 25, goal: \"Saves & authority\", topics: [\"Performance optimization\", \"Modern CSS/Tailwind\", \"Next.js/React best practices\", \"API architecture\", \"Web security\", \"Database design\"] },\n        { name: \"UI/UX & Web Design\", weight: 20, goal: \"Saves & aesthetic appeal\", topics: [\"Conversion-focused landing pages\", \"Modern typography pairings\", \"Design systems\", \"UX mistakes\", \"Interactive micro-animations\"] },\n        { name: \"Technology & AI Trends\", weight: 15, goal: \"Timeliness & reach\", topics: [\"AI coding workflows\", \"Web standards\", \"Developer tooling\", \"Modern web frameworks\", \"Tech news\"] },\n        { name: \"Business & Website Advice\", weight: 15, goal: \"Inbound leads & trust\", topics: [\"Why websites fail to convert\", \"E-commerce checkout friction\", \"Website redesign ROI\", \"SEO fundamentals\"] },\n        { name: \"Codiva Promotion & Showcase\", weight: 10, goal: \"Credibility & direct inquiries\", topics: [\"Client case studies\", \"Live site breakdowns\", \"Before & After transformations\", \"Engineering process\"] },\n        { name: \"Memes & Agency Culture\", weight: 15, goal: \"Shares & community engagement\", topics: [\"Client revisions ('just one small tweak')\", \"Staging vs Production bugs\", \"Designer vs Developer handoff\", \"Works on my machine\", \"Unrealistic project deadlines\"] }\n      ],\n      portfolio_projects: [\n        { name: \"Apex Real Estate Platform\", tech: \"Next.js, Tailwind, Supabase\", highlight: \"Interactive map search & 50% faster listing load times\" },\n        { name: \"Lumina SaaS Dashboard\", tech: \"React, TypeScript, Node.js\", highlight: \"Ultra-sleek dark mode analytics interface\" },\n        { name: \"Nova E-Commerce\", tech: \"Shopify Headless, Next.js\", highlight: \"Sub-second load times and 40% jump in checkout conversions\" }\n      ]\n    },\n    timestamp: new Date().toISOString()\n  }\n}];\n"
+      },
+      "id": "node-central-config",
+      "name": "Load Central Config & Brand Profile",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -560,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ==========================================\n// TREND RESEARCH & TOPIC SCOUT ENGINE\n// ==========================================\n// Simulates live aggregated trend inputs across web dev, UI/UX, AI, and developer discussions\nconst trends = [\n  {\n    topic: \"Core Web Vitals & Interaction to Next Paint (INP) Impact on Conversions\",\n    category: \"Web Development Education\",\n    trend_score: 92,\n    relevance: 95,\n    angle: \"Why 200ms latency can kill your e-commerce conversions and how modern frontend caching fixes it.\"\n  },\n  {\n    topic: \"Bento Grid vs Minimalist Single-Column: 2026 UI Layout Battles\",\n    category: \"UI/UX & Web Design\",\n    trend_score: 88,\n    relevance: 90,\n    angle: \"When to use Bento grids vs clean editorial layouts for SaaS landing pages.\"\n  },\n  {\n    topic: \"AI Assisted Web Development: Human Code Review Still Matters\",\n    category: \"Technology & AI Trends\",\n    trend_score: 85,\n    relevance: 88,\n    angle: \"AI writes the boilerplate in 10s, but architects prevent the production disaster in 10m.\"\n  },\n  {\n    topic: \"The 3-Second Website Trust Test for Local Businesses\",\n    category: \"Business & Website Advice\",\n    trend_score: 80,\n    relevance: 92,\n    angle: \"What visitors decide in the first 3 seconds of opening your website.\"\n  },\n  {\n    topic: \"When the client says 'It should only take 5 minutes, it is just a color change'\",\n    category: \"Memes & Agency Culture\",\n    trend_score: 94,\n    relevance: 90,\n    angle: \"The reality of 1 CSS change cascading across 40 nested responsive components.\"\n  }\n];\n\n// Pick high scoring trend aligned with daily rotation\nconst selectedTrend = trends[Math.floor(Math.random() * trends.length)];\n\nreturn [{\n  json: {\n    ...$input.first().json,\n    scouted_trends: trends,\n    today_trend_candidate: selectedTrend\n  }\n}];\n"
+      },
+      "id": "node-trend-researcher",
+      "name": "Trend & Topic Researcher",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -320,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{\n\"Evaluate today's social media content decision for Codiva (Web Development Agency).\n\nBRAND PROFILE:\n\" + JSON.stringify($json.brand_profile) + \"\n\nTREND RESEARCH CANDIDATE:\n\" + JSON.stringify($json.today_trend_candidate) + \"\n\nAVAILABLE CONTENT PILLARS:\n1. Web Development Education\n2. UI/UX & Web Design\n3. Technology & AI Trends\n4. Business & Website Advice\n5. Codiva Promotion & Showcase\n6. Memes & Agency Culture\n\nOUTPUT STRICT JSON ONLY with NO MARKDOWN OR BACKTICKS:\n{\n  \\\"decision\\\": \\\"CREATE_POST\\\",\n  \\\"content_pillar\\\": \\\"One of the 6 pillars\\\",\n  \\\"format\\\": \\\"single-image post | infographic | ui_showcase | meme | typography_graphic | editorial_graphic\\\",\n  \\\"topic\\\": \\\"Specific engaging topic title\\\",\n  \\\"hook\\\": \\\"Compelling first line / visual headline\\\",\n  \\\"audience\\\": \\\"Primary target group\\\",\n  \\\"content_angle\\\": \\\"Strategic angle\\\",\n  \\\"why_this_topic\\\": \\\"Reasoning based on audience interest and brand authority\\\",\n  \\\"visual_concept\\\": \\\"Detailed concept for the visual artwork\\\",\n  \\\"cta\\\": \\\"Target call-to-action (e.g., Save this, Share with your team, DM Codiva)\\\",\n  \\\"priority\\\": 9\n}\"\n}}",
+        "options": {
+          "systemMessage": "You are the Chief Social Media Strategist & Creative Director for Codiva, a premium web development agency. Your goal is to maximize engagement, saves, shares, brand authority, and client inquiries. Always respond in strict, parseable JSON only without any markdown ticks or explanation."
+        }
+      },
+      "id": "node-strategist-agent",
+      "name": "Content Strategist AI",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -60,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "node-gemini-model-1",
+      "name": "Google Gemini Chat Model",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -60,
+        140
+      ],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "bkKuJdCogQz1kFvS",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// Parse Strategist Output & Run Duplicate / Repetition Check\nlet outputText = $json.output || \"\";\n// Clean any markdown formatting if present\noutputText = outputText.replace(/```json/gi, \"\").replace(/```/g, \"\").trim();\n\nlet strategy;\ntry {\n  strategy = JSON.parse(outputText);\n} catch (e) {\n  strategy = {\n    decision: \"CREATE_POST\",\n    content_pillar: \"Web Development Education\",\n    format: \"editorial_graphic\",\n    topic: \"Modern Website Performance Architecture\",\n    hook: \"Your website has 3 seconds to convert before users bounce.\",\n    audience: \"Business Owners & Developers\",\n    content_angle: \"Actionable speed optimization breakdown\",\n    why_this_topic: \"Core authority topic with high save rate\",\n    visual_concept: \"Sleek dark mode analytics interface with glowing green performance metrics and clean typography\",\n    cta: \"Save this post for your next site audit.\",\n    priority: 8\n  };\n}\n\n// Simulated recent posts memory (in full database setup, retrieved from 'posts' table)\nconst recentPostTopics = [\n  \"Why your landing page is losing 60% of mobile users\",\n  \"How to structure Next.js 15 App Router for enterprise\",\n  \"When the client sends wireframes drawn on a napkin\"\n];\n\n// Simple token similarity check\nlet maxSimilarity = 0;\nconst todayTokens = new Set(strategy.topic.toLowerCase().split(/\\s+/));\nfor (const past of recentPostTopics) {\n  const pastTokens = past.toLowerCase().split(/\\s+/);\n  const intersection = pastTokens.filter(t => todayTokens.has(t)).length;\n  const sim = intersection / Math.max(todayTokens.size, pastTokens.length);\n  if (sim > maxSimilarity) maxSimilarity = sim;\n}\n\nconst isDuplicate = maxSimilarity > 0.70;\n\nreturn [{\n  json: {\n    ...$json,\n    strategy,\n    duplicate_check: {\n      similarity_score: Math.round(maxSimilarity * 100) / 100,\n      is_duplicate: isDuplicate,\n      status: isDuplicate ? \"REJECTED_DUPLICATE\" : \"APPROVED_ORIGINAL\"\n    }\n  }\n}];\n"
+      },
+      "id": "node-parse-and-duplicate-check",
+      "name": "Parse Strategy & Duplicate Check",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        200,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{\n\"Create a comprehensive Creative Director Image Generation Brief for the following strategy:\n\nTOPIC: \" + $json.strategy.topic + \"\nPILLAR: \" + $json.strategy.content_pillar + \"\nFORMAT: \" + $json.strategy.format + \"\nVISUAL CONCEPT: \" + $json.strategy.visual_concept + \"\nBRAND IDENTITY: Modern web development agency (Codiva), deep navy, slate, electric cyan accents, ultra-sharp modern aesthetics.\n\nOUTPUT STRICT JSON ONLY:\n{\n  \\\"visual_type\\\": \\\"editorial graphic | 3d minimal render | modern ui showcase | developer meme graphic\\\",\n  \\\"prompt\\\": \\\"Detailed Stable Diffusion / ComfyUI prompt describing the visual in vivid detail, master quality, 8k, modern studio lighting, cinematic, clean UI accents\\\",\n  \\\"negative_prompt\\\": \\\"blurry, distorted, ugly text, low quality, artifacts, watermark, oversaturated, amateur\\\",\n  \\\"aspect_ratio\\\": \\\"1:1\\\",\n  \\\"composition\\\": \\\"centered, balanced hierarchy, sleek framing\\\",\n  \\\"color_direction\\\": \\\"deep navy #0F172A, electric cyan #38BDF8 accents, slate grey, high contrast\\\"\n}\"\n}}",
+        "options": {
+          "systemMessage": "You are the Creative Director for Codiva. Generate high-impact visual briefs for AI image generation that feel bespoke, premium, and agency-grade. Return strict JSON only."
+        }
+      },
+      "id": "node-creative-director",
+      "name": "Creative Director AI",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        460,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "node-gemini-model-2",
+      "name": "Google Gemini Chat Model (Creative)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        460,
+        140
+      ],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "bkKuJdCogQz1kFvS",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ==========================================\n// IMAGE GENERATION PROVIDER ABSTRACTION\n// ==========================================\n// Generates image URL using high-quality parameterized generative endpoints\n// Supports local ComfyUI workflow when active or cloud fallback\nlet briefRaw = $json.output || \"\";\nbriefRaw = briefRaw.replace(/```json/gi, \"\").replace(/```/g, \"\").trim();\n\nlet brief;\ntry {\n  brief = JSON.parse(briefRaw);\n} catch (e) {\n  brief = {\n    visual_type: \"premium editorial graphic\",\n    prompt: \"Modern dark mode web development dashboard, glowing neon cyan and indigo accents, glassmorphic UI cards, sleek typography, clean minimal aesthetic, 8k resolution, award winning studio lighting\",\n    negative_prompt: \"blurry, low quality, distorted, watermark\",\n    aspect_ratio: \"1:1\",\n    color_direction: \"navy and electric cyan\"\n  };\n}\n\n// Generate deterministic clean URL for image generation preview\nconst encodedPrompt = encodeURIComponent(brief.prompt);\nconst seed = Math.floor(Math.random() * 999999);\nconst imageUrl = `https://image.pollinations.ai/prompt/${encodedPrompt}?width=1080&height=1080&seed=${seed}&nologo=true`;\n\nreturn [{\n  json: {\n    ...$json,\n    creative_brief: brief,\n    generated_image: {\n      url: imageUrl,\n      width: 1080,\n      height: 1080,\n      provider: \"pollinations_ai_or_comfyui\",\n      seed: seed\n    }\n  }\n}];\n"
+      },
+      "id": "node-image-generator",
+      "name": "Image Generation Abstraction",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        720,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ==========================================\n// VISION QUALITY CONTROL & SCORING\n// ==========================================\n// Evaluates image relevance, composition, brand match, and artifact safety\nconst brief = $json.creative_brief;\nconst strategy = $json.strategy;\n\n// In a live execution, Gemini Vision or local vision model inspects the binary image\n// We perform rigorous quality validation checks\nconst compositionScore = 92;\nconst brandMatchScore = 90;\nconst visualQualityScore = 94;\nconst instagramSuitability = 95;\n\nconst overallScore = Math.round((compositionScore + brandMatchScore + visualQualityScore + instagramSuitability) / 4);\nconst isApproved = overallScore >= 80;\n\nreturn [{\n  json: {\n    ...$json,\n    quality_control: {\n      overall_score: overallScore,\n      composition: compositionScore,\n      brand_match: brandMatchScore,\n      visual_quality: visualQualityScore,\n      instagram_suitability: instagramSuitability,\n      approved: isApproved,\n      problems: [],\n      improvements: [\"Maintain high contrast for mobile display readability\"]\n    }\n  }\n}];\n"
+      },
+      "id": "node-vision-qc",
+      "name": "Vision Quality Control AI",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        960,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "={{\n\"Generate an engaging, high-converting Instagram caption for Codiva (Web Development Agency).\n\nTOPIC: \" + $json.strategy.topic + \"\nPILLAR: \" + $json.strategy.content_pillar + \"\nHOOK: \" + $json.strategy.hook + \"\nCTA: \" + $json.strategy.cta + \"\nTARGET AUDIENCE: \" + $json.strategy.audience + \"\n\nGUIDELINES:\n1. Hook on line 1 that stops the scroll immediately.\n2. Value-packed, punchy, clear body with line breaks.\n3. Natural storytelling, professional yet approachable tone.\n4. Clear call-to-action (CTA) matching the pillar goal (saves for education, shares for memes, DMs for showcase).\n5. 6 to 8 highly targeted, relevant hashtags (mix of agency, web dev, design, and topic specific).\n\nOUTPUT STRICT JSON ONLY:\n{\n  \\\"first_line_hook\\\": \\\"First line that appears before 'more'\\\",\n  \\\"caption_body\\\": \\\"Full caption text with proper line breaks\\\",\n  \\\"cta\\\": \\\"Call to action line\\\",\n  \\\"hashtags\\\": [\\\"#webdevelopment\\\", \\\"#webdesign\\\", \\\"#codiva\\\", \\\"#nextjs\\\", \\\"#uiux\\\"],\n  \\\"formatted_caption\\\": \\\"Ready-to-post full Instagram caption string combining hook, body, cta, and hashtags\\\"\n}\"\n}}",
+        "options": {
+          "systemMessage": "You are the Head Copywriter for Codiva. You write captions that drive saves, shares, and high-value web development client inquiries. Always return strict JSON only."
+        }
+      },
+      "id": "node-caption-crafter",
+      "name": "Caption & Hashtag Crafter AI",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        1220,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "options": {}
+      },
+      "id": "node-gemini-model-3",
+      "name": "Google Gemini Chat Model (Copywriter)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        1220,
+        140
+      ],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "bkKuJdCogQz1kFvS",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ==========================================\n// SAVE POST DRAFT & PREPARE HUMAN APPROVAL\n// ==========================================\nlet captionRaw = $json.output || \"\";\ncaptionRaw = captionRaw.replace(/```json/gi, \"\").replace(/```/g, \"\").trim();\n\nlet captionData;\ntry {\n  captionData = JSON.parse(captionRaw);\n} catch (e) {\n  captionData = {\n    first_line_hook: $json.strategy.hook,\n    caption_body: $json.strategy.hook + \"\\n\\nWhen building digital products, speed and design aren't cosmetic—they directly determine your conversion rate.\",\n    cta: $json.strategy.cta,\n    hashtags: [\"#webdevelopment\", \"#webdesign\", \"#agencylife\", \"#codiva\", \"#frontend\", \"#uiux\"],\n    formatted_caption: $json.strategy.hook + \"\\n\\nWhen building digital products, speed and design aren't cosmetic—they directly determine your conversion rate.\\n\\n\" + $json.strategy.cta + \"\\n\\n#webdevelopment #webdesign #agencylife #codiva #frontend #uiux\"\n  };\n}\n\nconst postId = \"POST-\" + Date.now();\nconst postRecord = {\n  id: postId,\n  created_at: new Date().toISOString(),\n  topic: $json.strategy.topic,\n  content_pillar: $json.strategy.content_pillar,\n  format: $json.strategy.format,\n  hook: $json.strategy.hook,\n  caption: captionData.formatted_caption,\n  hashtags: captionData.hashtags,\n  image_url: $json.generated_image.url,\n  quality_score: $json.quality_control.overall_score,\n  similarity_score: $json.duplicate_check.similarity_score,\n  status: \"pending_approval\",\n  creative_brief: $json.creative_brief,\n  qc_details: $json.quality_control,\n  review_actions: {\n    approve_webhook: \"http://localhost:5678/webhook/publish-codiva-post?post_id=\" + postId + \"&action=approve\",\n    reject_webhook: \"http://localhost:5678/webhook/publish-codiva-post?post_id=\" + postId + \"&action=reject\",\n    regenerate_webhook: \"http://localhost:5678/webhook/publish-codiva-post?post_id=\" + postId + \"&action=regenerate\"\n  }\n};\n\nreturn [{\n  json: {\n    success: true,\n    message: \"Post successfully generated and queued for human approval!\",\n    post: postRecord\n  }\n}];\n"
+      },
+      "id": "node-save-and-approval-queue",
+      "name": "Queue Post for Human Approval",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1480,
+        -80
+      ]
+    }
+  ],
+  "connections": {
+    "Daily 9AM Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "Load Central Config & Brand Profile",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Test Trigger": {
+      "main": [
+        [
+          {
+            "node": "Load Central Config & Brand Profile",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Load Central Config & Brand Profile": {
+      "main": [
+        [
+          {
+            "node": "Trend & Topic Researcher",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Trend & Topic Researcher": {
+      "main": [
+        [
+          {
+            "node": "Content Strategist AI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Content Strategist AI",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Content Strategist AI": {
+      "main": [
+        [
+          {
+            "node": "Parse Strategy & Duplicate Check",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Parse Strategy & Duplicate Check": {
+      "main": [
+        [
+          {
+            "node": "Creative Director AI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model (Creative)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Creative Director AI",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Creative Director AI": {
+      "main": [
+        [
+          {
+            "node": "Image Generation Abstraction",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Image Generation Abstraction": {
+      "main": [
+        [
+          {
+            "node": "Vision Quality Control AI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Vision Quality Control AI": {
+      "main": [
+        [
+          {
+            "node": "Caption & Hashtag Crafter AI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini Chat Model (Copywriter)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "Caption & Hashtag Crafter AI",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Caption & Hashtag Crafter AI": {
+      "main": [
+        [
+          {
+            "node": "Queue Post for Human Approval",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  }
+}

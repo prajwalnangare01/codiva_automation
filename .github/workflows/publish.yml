@@ -1,0 +1,64 @@
+name: Codiva Autonomous 24/7 Instagram Publisher
+
+on:
+  schedule:
+    # 7:00 PM IST (13:30 UTC) - Slot 1: LEARN (Bad vs Pro Comparison Card)
+    - cron: '30 13 * * *'
+    # 10:00 PM IST (16:30 UTC) - Slot 2: APPLY (Interactive Challenge Card)
+    - cron: '30 16 * * *'
+  workflow_dispatch:
+    inputs:
+      dry_run:
+        description: 'Dry run mode (true = test render without posting, false = publish live to Instagram)'
+        required: false
+        default: 'false'
+        type: choice
+        options:
+          - 'false'
+          - 'true'
+
+# Allow GitHub Actions bot to commit and push updated state.json back to the repository
+permissions:
+  contents: write
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: 📥 Check out repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.GITHUB_TOKEN }}
+          fetch-depth: 0
+
+      - name: ⚙️ Set up Node.js 20
+        uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: 'npm'
+
+      - name: 📦 Install dependencies
+        run: npm install
+
+      - name: 🚀 Run Autonomous Publisher
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          IG_ACCESS_TOKEN: ${{ secrets.IG_ACCESS_TOKEN }}
+          IG_ACCOUNT_ID: ${{ secrets.IG_ACCOUNT_ID }}
+          FREEIMAGEHOST_KEY: ${{ secrets.FREEIMAGEHOST_KEY || '6d207e02198a847aa98d0a2a901485a5' }}
+          DRY_RUN: ${{ github.event.inputs.dry_run || 'false' }}
+        run: node scripts/publish_autonomous.js
+
+      - name: 💾 Persist State Progress
+        run: |
+          git config --global user.name "github-actions[bot]"
+          git config --global user.email "github-actions[bot]@users.noreply.github.com"
+          git add data/state.json
+          if git diff --staged --quiet; then
+            echo "No state changes to commit."
+          else
+            git commit -m "chore: advance curriculum progression state [skip ci]"
+            git push
+            echo "State successfully committed and pushed to repository."
+          fi

@@ -1,0 +1,482 @@
+{
+  "updatedAt": "2026-09-09T11:03:27.237Z",
+  "createdAt": "2026-09-03T16:10:06.341Z",
+  "id": "xpDzmaczdOQGSJQe",
+  "name": "Codiva — AI Social Media Manager (Unified)",
+  "description": null,
+  "active": false,
+  "isArchived": false,
+  "nodes": [
+    {
+      "parameters": {
+        "rule": {
+          "interval": [
+            {
+              "field": "cronExpression",
+              "expression": "0 19,22 * * *"
+            }
+          ]
+        }
+      },
+      "id": "u-node-schedule",
+      "name": "Daily 7PM & 10PM Schedule Trigger",
+      "type": "n8n-nodes-base.scheduleTrigger",
+      "typeVersion": 1.2,
+      "position": [
+        -1000,
+        0
+      ]
+    },
+    {
+      "parameters": {},
+      "id": "u-node-manual",
+      "name": "Manual Run Trigger",
+      "type": "n8n-nodes-base.manualTrigger",
+      "typeVersion": 1,
+      "position": [
+        -1000,
+        -180
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ============================================================================\n// 1. BRAND DNA & MERN ROADMAP CONFIG\n// ============================================================================\nreturn [{\n  json: {\n    config: {\n      TEST_MODE: true, // Set to false to publish live to @codiva_labs on Instagram!\n      INSTAGRAM_ACCOUNT_ID: \"17841475951559107\",\n      SERIES_NAME: \"MERN Stack Mastery (Clean Mobile Edition)\",\n      SCHEDULE_TIMES: [\"7:00 PM IST\", \"10:00 PM IST\"],\n      PROGRESSION_ENGINE: \"Persistent Disk State (Advances Every Single Execution)\"\n    },\n    brand_profile: {\n      name: \"Codiva\",\n      tagline: \"High-Performance Web Engineering & UI/UX Design\"\n    },\n    execution_started_at: new Date().toISOString()\n  }\n}];\n"
+      },
+      "id": "u-node-config",
+      "name": "1. Brand DNA & Config",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -760,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "method": "GET",
+        "url": "http://127.0.0.1:3210/curriculum/next",
+        "options": {}
+      },
+      "id": "u-node-curriculum-fetch",
+      "name": "2. Fetch Next MERN Concept (Auto-Advance)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        -520,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "promptType": "define",
+        "text": "=You are the Lead Technical Mentor for Codiva's 90-Day MERN Stack Series.\n\nTODAY'S POST SPECIFICATIONS:\n- Day: {{ $json.concept.day_tag }}\n- Slot: Post {{ $json.concept.slot }} of 2 ({{ $json.concept.scheduled_time }})\n- Module: {{ $json.concept.module }}\n- Topic: {{ $json.concept.headline }}\n- Subtitle: {{ $json.concept.subheadline }}\n- Mode: {{ $json.concept.slot === 1 ? \"🧠 LEARN (Explain concept clearly with mental model)\" : \"❌ vs ✅ APPLY (Show common rookie mistake vs senior production fix)\" }}\n\nEXPLANATION RULES:\n1. EXTREMELY EASY TO UNDERSTAND: Write for beginners and students so they understand in 5 seconds.\n2. NO ACADEMIC JARGON: Use simple, everyday developer language.\n3. CONCISE CODE SNIPPETS: Generate 2-3 clean lines of code for the rookie way and 2-3 clean lines for the senior way tailored to \"{{ $json.concept.headline }}\".\n4. DIRECT CAUSE & EFFECT: State why the mistake fails in 1 sentence, and why the pro way works in 1 sentence.\n\nOUTPUT STRICT VALID JSON ONLY (no markdown backticks, no code fences):\n{\n  \"badge\": \"{{ $json.concept.badge }}\",\n  \"day_tag\": \"{{ $json.concept.day_tag }}\",\n  \"headline\": \"{{ $json.concept.headline }}\",\n  \"subheadline\": \"{{ $json.concept.subheadline }}\",\n  \"rookie_way\": {\n    \"label\": \"❌ THE COMMON MISTAKE\",\n    \"subtitle\": \"What Beginners Do\",\n    \"filename\": \"example_bad.{{ $json.concept.module.toLowerCase().includes('html') ? 'html' : ($json.concept.module.toLowerCase().includes('css') ? 'css' : 'js') }}\",\n    \"code_lines\": [\n      \"// Code line 1 showing the mistake\",\n      \"// Code line 2 showing what causes the bug\"\n    ],\n    \"explanation\": \"Simple 1-sentence explanation of why this fails.\"\n  },\n  \"senior_way\": {\n    \"label\": \"✅ THE PRO WAY\",\n    \"subtitle\": \"Production Standard\",\n    \"filename\": \"example_pro.{{ $json.concept.module.toLowerCase().includes('html') ? 'html' : ($json.concept.module.toLowerCase().includes('css') ? 'css' : 'js') }}\",\n    \"code_lines\": [\n      \"// Clean pro code line 1\",\n      \"// Clean pro code line 2\"\n    ],\n    \"explanation\": \"Simple 1-sentence explanation of why this works.\"\n  },\n  \"golden_rule\": \"Memorable 1-line rule for {{ $json.concept.headline }}.\",\n  \"golden_subrule\": \"A secondary practical tip for developers.\",\n  \"formatted_caption\": \"Complete Instagram caption with line 1 hook, rookie vs pro breakdown, golden rule, CTA, and 8 hashtags.\"\n}",
+        "options": {
+          "systemMessage": "You are the Lead Technical Mentor for Codiva. Output strict valid JSON only without markdown formatting."
+        }
+      },
+      "id": "u-node-strategist",
+      "name": "3. Content Strategist AI",
+      "type": "@n8n/n8n-nodes-langchain.agent",
+      "typeVersion": 3.1,
+      "position": [
+        -280,
+        -80
+      ],
+      "retryOnFail": true,
+      "maxTries": 3,
+      "waitBetweenTries": 2000
+    },
+    {
+      "parameters": {
+        "modelName": "models/gemini-3.1-flash-lite",
+        "options": {}
+      },
+      "id": "u-node-gemini-strategist",
+      "name": "Google Gemini (Strategist)",
+      "type": "@n8n/n8n-nodes-langchain.lmChatGoogleGemini",
+      "typeVersion": 1,
+      "position": [
+        -280,
+        140
+      ],
+      "credentials": {
+        "googlePalmApi": {
+          "id": "bkKuJdCogQz1kFvS",
+          "name": "Google Gemini(PaLM) Api account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ============================================================================\n// 4. PARSE BRIEF & STAGE FINAL RENDER\n// ============================================================================\nlet raw = $json.output || \"\";\nraw = raw.replace(/```json/gi, \"\").replace(/```/g, \"\").trim();\n\nlet data;\nif (raw) {\n  try { data = JSON.parse(raw); } catch(e) {\n    const m = raw.match(/\\{[\\s\\S]*\\}/);\n    if (m) { try { data = JSON.parse(m[0]); } catch(err){} }\n  }\n}\n\nconst upstream = ($('2. Fetch Next MERN Concept (Auto-Advance)').item?.json) || {};\nconst concept = data?.concept || upstream.concept || {};\nconst meta = data?.meta || upstream.meta || {};\n\nconst finalBrief = {\n  ...concept,\n  formatted_caption: data?.formatted_caption || (\n    `${concept.badge || 'MERN STACK'}: ${concept.headline || ''}\\n\\n` +\n    `${concept.golden_rule || 'Master clean code principles every day.'}\\n\\n` +\n    \"Save this concept for your daily MERN roadmap 🚀\\n\\n\" +\n    \"#mernstack #webdevelopment #reactjs #nodejs #mongodb #javascript #codiva #coding\"\n  )\n};\n\nreturn [{\n  json: {\n    brief: finalBrief,\n    caption: finalBrief.formatted_caption,\n    curriculum_meta: meta\n  }\n}];\n"
+      },
+      "id": "u-node-prompt-formatter",
+      "name": "4. Brief Parser & Stager",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -40,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "http://127.0.0.1:3210/render",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={{ JSON.stringify($json.brief) }}",
+        "options": {}
+      },
+      "id": "u-node-canvas-engine",
+      "name": "5. Render Clean Mobile Card (HTTP Engine)",
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        200,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ============================================================================\n// 6. PREPARE FINAL POST RECORD\n// ============================================================================\nconst canvasData = $json;\n\nif (!canvasData.image_url || !canvasData.image_url.startsWith(\"http\")) {\n  throw new Error(\"Invalid or missing image_url from canvas engine: \" + JSON.stringify(canvasData));\n}\n\nconst staged = ($('4. Brief Parser & Stager').item?.json) || {};\nconst config = ($('1. Brand DNA & Config').item?.json?.config) || { TEST_MODE: true, INSTAGRAM_ACCOUNT_ID: \"17841475951559107\" };\n\nconst postId = \"CODIVA-MERN-\" + Date.now();\nconst testMode = (config.TEST_MODE === true);\n\nreturn [{\n  json: {\n    post_id: postId,\n    created_at: new Date().toISOString(),\n    series: \"MERN Stack Mastery\",\n    topic: staged.brief?.headline || \"MERN Concept\",\n    headline: staged.brief?.headline,\n    badge: staged.brief?.badge,\n    caption: staged.caption,\n    image_url: canvasData.image_url,\n    format: \"1080x1350_clean_mobile_comparison\",\n    aspect_ratio: \"4:5 (1080x1350)\",\n    test_mode: testMode,\n    ig_user_id: config.INSTAGRAM_ACCOUNT_ID || \"17841475951559107\",\n    status: testMode ? \"test_mode_simulation\" : \"publishing_live\",\n    progress: staged.curriculum_meta\n  }\n}];\n"
+      },
+      "id": "u-node-prepare-post",
+      "name": "6. Prepare Final Post Record",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        440,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "boolean": [
+            {
+              "value1": "={{ $json.test_mode }}",
+              "value2": true
+            }
+          ]
+        }
+      },
+      "id": "u-node-test-mode-check",
+      "name": "7. Is TEST_MODE Active?",
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2,
+      "position": [
+        680,
+        -80
+      ]
+    },
+    {
+      "parameters": {
+        "jsCode": "\n// ============================================================================\n// 8A. TEST MODE SUCCESS SUMMARY (SIMULATION)\n// ============================================================================\nconst data = $input.first().json;\n\nreturn [{\n  json: {\n    simulation_status: \"SUCCESS_PREVIEW_READY\",\n    message: \"TEST_MODE is ACTIVE: The clean mobile card was rendered and hosted successfully without calling Instagram Graph API.\",\n    post_id: data.post_id,\n    series: data.series,\n    badge: data.badge,\n    headline: data.headline,\n    image_url: data.image_url,\n    caption: data.caption,\n    curriculum_progression: data.progress,\n    scheduled_daily_times: \"7:00 PM IST and 10:00 PM IST\",\n    how_to_publish_live: \"To publish live to @codiva_labs on Instagram, change TEST_MODE to false in Node 1 (Brand DNA & Config).\"\n  }\n}];\n"
+      },
+      "id": "u-node-test-summary",
+      "name": "8A. Test Mode Success Summary",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        920,
+        -180
+      ]
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "v23.0",
+        "node": "17841475951559107",
+        "edge": "media",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "image_url",
+                "value": "={{ $json.image_url }}"
+              },
+              {
+                "name": "caption",
+                "value": "={{ $json.caption }}"
+              }
+            ]
+          }
+        }
+      },
+      "id": "u-node-ig-container",
+      "name": "8B. Instagram Create Media Container",
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        920,
+        20
+      ],
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "1KpPi6PzgdqymOwm",
+          "name": "Facebook Graph account"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "amount": 10,
+        "unit": "seconds"
+      },
+      "id": "u-node-wait",
+      "name": "9. Wait For Media Processing",
+      "type": "n8n-nodes-base.wait",
+      "typeVersion": 1.1,
+      "position": [
+        1160,
+        20
+      ],
+      "webhookId": "u-wait-webhook-ig"
+    },
+    {
+      "parameters": {
+        "httpRequestMethod": "POST",
+        "graphApiVersion": "v23.0",
+        "node": "17841475951559107",
+        "edge": "media_publish",
+        "options": {
+          "queryParameters": {
+            "parameter": [
+              {
+                "name": "creation_id",
+                "value": "={{ $('8B. Instagram Create Media Container').item.json.id }}"
+              }
+            ]
+          }
+        }
+      },
+      "id": "u-node-ig-publish",
+      "name": "10. Instagram Publish Live Media",
+      "type": "n8n-nodes-base.facebookGraphApi",
+      "typeVersion": 1,
+      "position": [
+        1400,
+        20
+      ],
+      "credentials": {
+        "facebookGraphApi": {
+          "id": "1KpPi6PzgdqymOwm",
+          "name": "Facebook Graph account"
+        }
+      }
+    }
+  ],
+  "connections": {
+    "Daily 7PM & 10PM Schedule Trigger": {
+      "main": [
+        [
+          {
+            "node": "1. Brand DNA & Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Manual Run Trigger": {
+      "main": [
+        [
+          {
+            "node": "1. Brand DNA & Config",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "1. Brand DNA & Config": {
+      "main": [
+        [
+          {
+            "node": "2. Fetch Next MERN Concept (Auto-Advance)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "2. Fetch Next MERN Concept (Auto-Advance)": {
+      "main": [
+        [
+          {
+            "node": "3. Content Strategist AI",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Google Gemini (Strategist)": {
+      "ai_languageModel": [
+        [
+          {
+            "node": "3. Content Strategist AI",
+            "type": "ai_languageModel",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "3. Content Strategist AI": {
+      "main": [
+        [
+          {
+            "node": "4. Brief Parser & Stager",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "4. Brief Parser & Stager": {
+      "main": [
+        [
+          {
+            "node": "5. Render Clean Mobile Card (HTTP Engine)",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "5. Render Clean Mobile Card (HTTP Engine)": {
+      "main": [
+        [
+          {
+            "node": "6. Prepare Final Post Record",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "6. Prepare Final Post Record": {
+      "main": [
+        [
+          {
+            "node": "7. Is TEST_MODE Active?",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "7. Is TEST_MODE Active?": {
+      "main": [
+        [
+          {
+            "node": "8A. Test Mode Success Summary",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "8B. Instagram Create Media Container",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "8B. Instagram Create Media Container": {
+      "main": [
+        [
+          {
+            "node": "9. Wait For Media Processing",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "9. Wait For Media Processing": {
+      "main": [
+        [
+          {
+            "node": "10. Instagram Publish Live Media",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1",
+    "timezone": "Asia/Kolkata",
+    "saveManualExecutions": true,
+    "callerPolicy": "workflowsFromSameOwner",
+    "availableInMCP": false
+  },
+  "staticData": null,
+  "meta": null,
+  "pinData": {},
+  "versionId": "4f62c9c0-3adc-4293-ad72-00f057e05a6a",
+  "activeVersionId": null,
+  "versionCounter": 108,
+  "triggerCount": 0,
+  "shared": [
+    {
+      "updatedAt": "2026-09-03T16:10:06.353Z",
+      "createdAt": "2026-09-03T16:10:06.353Z",
+      "role": "workflow:owner",
+      "workflowId": "xpDzmaczdOQGSJQe",
+      "projectId": "gH4HBfdStNmjQbz3",
+      "project": {
+        "updatedAt": "2026-01-31T09:58:42.198Z",
+        "createdAt": "2026-01-31T09:58:03.102Z",
+        "id": "gH4HBfdStNmjQbz3",
+        "name": "prajwal nangare <prajwalnagare123@gmail.com>",
+        "type": "personal",
+        "icon": null,
+        "description": null,
+        "creatorId": "7c2cf5c1-8d2b-401d-862d-c7abe0d09a07",
+        "projectRelations": [
+          {
+            "updatedAt": "2026-01-31T09:58:03.103Z",
+            "createdAt": "2026-01-31T09:58:03.103Z",
+            "userId": "7c2cf5c1-8d2b-401d-862d-c7abe0d09a07",
+            "projectId": "gH4HBfdStNmjQbz3",
+            "user": {
+              "updatedAt": "2026-09-09T09:35:36.000Z",
+              "createdAt": "2026-01-31T09:58:02.719Z",
+              "id": "7c2cf5c1-8d2b-401d-862d-c7abe0d09a07",
+              "email": "prajwalnagare123@gmail.com",
+              "firstName": "prajwal",
+              "lastName": "nangare",
+              "personalizationAnswers": {
+                "version": "v4",
+                "personalization_survey_submitted_at": "2026-01-31T09:59:29.936Z",
+                "personalization_survey_n8n_version": "1.102.3",
+                "automationGoalDevops": [
+                  "other"
+                ],
+                "companySize": "personalUser",
+                "companyType": "education",
+                "role": "engineering",
+                "reportedSource": "friend"
+              },
+              "settings": {
+                "userActivated": false,
+                "easyAIWorkflowOnboarded": true
+              },
+              "disabled": false,
+              "mfaEnabled": false,
+              "lastActiveAt": "2026-09-09",
+              "isPending": false
+            }
+          }
+        ]
+      }
+    }
+  ],
+  "tags": [],
+  "activeVersion": null
+}
