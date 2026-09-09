@@ -1,6 +1,6 @@
 {
-  "currentIndex": 3,
-  "totalPosted": 3,
+  "currentIndex": 4,
+  "totalPosted": 4,
   "history": [
     {
       "index": 0,
@@ -28,10 +28,19 @@
       "permalink": "https://www.instagram.com/p/DdEvbAAj_uX/",
       "imageUrl": "https://iili.io/nFwxSoX.png",
       "postedAt": "2026-09-09T16:56:45.216Z"
+    },
+    {
+      "index": 3,
+      "day": 2,
+      "slot": 2,
+      "headline": "Heading hierarchy mistakes",
+      "permalink": "https://www.instagram.com/p/DdExkW_iTNh/",
+      "imageUrl": "https://iili.io/nFN3YJt.png",
+      "postedAt": "2026-09-09T17:15:30.130Z"
     }
   ],
-  "lastPostedTopic": "Headings & paragraphs",
-  "lastPostedAt": "2026-09-09T16:56:45.216Z",
-  "lastPermalink": "https://www.instagram.com/p/DdEvbAAj_uX/",
-  "lastImageUrl": "https://iili.io/nFwxSoX.png"
+  "lastPostedTopic": "Heading hierarchy mistakes",
+  "lastPostedAt": "2026-09-09T17:15:30.130Z",
+  "lastPermalink": "https://www.instagram.com/p/DdExkW_iTNh/",
+  "lastImageUrl": "https://iili.io/nFN3YJt.png"
 }
