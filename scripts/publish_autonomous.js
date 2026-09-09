@@ -12,7 +12,7 @@ const path = require('path');
 const https = require('https');
 const { Resvg } = require('@resvg/resvg-js');
 
-// 1. LOAD ENVIRONMENT VARIABLES
+// 1. LOAD & SANITIZE ENVIRONMENT VARIABLES
 function loadEnv() {
   const envPath = path.resolve(__dirname, '..', '.env');
   if (fs.existsSync(envPath)) {
@@ -33,11 +33,12 @@ function loadEnv() {
 }
 loadEnv();
 
-const GEMINI_API_KEY = process.env.GEMINI_API_KEY || '';
-const IG_ACCESS_TOKEN = process.env.IG_ACCESS_TOKEN || '';
-const IG_ACCOUNT_ID = process.env.IG_ACCOUNT_ID || '17841475951559107';
-const FREEIMAGEHOST_KEY = process.env.FREEIMAGEHOST_KEY || '6d207e02198a847aa98d0a2a901485a5';
-const DRY_RUN = process.env.DRY_RUN === 'true';
+// Strictly sanitize secrets to strip accidental carriage returns, newlines, tabs, and quotes
+const GEMINI_API_KEY = (process.env.GEMINI_API_KEY || '').replace(/[\r\n\t\s"']/g, '').trim();
+const IG_ACCESS_TOKEN = (process.env.IG_ACCESS_TOKEN || '').replace(/[\r\n\t\s"']/g, '').trim();
+const IG_ACCOUNT_ID = (process.env.IG_ACCOUNT_ID || '17841475951559107').replace(/[^0-9]/g, '').trim() || '17841475951559107';
+const FREEIMAGEHOST_KEY = (process.env.FREEIMAGEHOST_KEY || '6d207e02198a847aa98d0a2a901485a5').replace(/[\r\n\t\s"']/g, '').trim();
+const DRY_RUN = (process.env.DRY_RUN || 'false').trim().toLowerCase() === 'true';
 
 const ROOT_DIR = path.resolve(__dirname, '..');
 const DATA_DIR = path.join(ROOT_DIR, 'data');
@@ -72,6 +73,10 @@ function wrapText(text, maxChars = 46) {
 }
 
 function httpsRequest(options, postData = null) {
+  if (options && typeof options.path === 'string') {
+    // Strip accidental newlines, carriage returns, or tabs that cause ERR_UNESCAPED_CHARACTERS
+    options.path = options.path.replace(/[\r\n\t]/g, '').trim();
+  }
   return new Promise((resolve, reject) => {
     const req = https.request(options, (res) => {
       let body = '';
@@ -115,7 +120,7 @@ function getCurriculum() {
   return JSON.parse(fs.readFileSync(CURRICULUM_FILE, 'utf8'));
 }
 
-// 4. GEMINI AI CONTENT GENERATOR
+// 4. GEMINI AI CONTENT GENERATOR (With multi-model fallback)
 async function generateCreativeWithGemini(concept, isChallenge) {
   if (!GEMINI_API_KEY) {
     console.log('⚠️ GEMINI_API_KEY not found. Using curriculum pre-computed dataset.');
@@ -180,38 +185,45 @@ Generate a BAD WAY vs PRO WAY comparison card in strict JSON:
 Return ONLY valid raw JSON with no wrapping markdown if possible.
 `;
 
-  try {
-    const postData = JSON.stringify({
-      contents: [{ parts: [{ text: promptText }] }],
-      generationConfig: {
-        temperature: 0.4,
-        responseMimeType: "application/json"
-      }
-    });
-
-    const res = await httpsRequest({
-      hostname: 'generativelanguage.googleapis.com',
-      path: `/v1beta/models/gemini-flash-latest:generateContent?key=${GEMINI_API_KEY}`,
-      method: 'POST',
-      headers: {
-        'Content-Type': 'application/json',
-        'Content-Length': Buffer.byteLength(postData)
-      }
-    }, postData);
-
-    if (res.statusCode === 200) {
-      const parsedResp = JSON.parse(res.body);
-      const text = parsedResp.candidates?.[0]?.content?.parts?.[0]?.text || '';
-      const cleanJson = text.replace(/^```json/im, '').replace(/^```/im, '').replace(/```$/im, '').trim();
-      return JSON.parse(cleanJson);
-    } else {
-      console.warn(`Gemini API returned status ${res.statusCode}: ${res.body.slice(0, 150)}`);
-      return null;
+  const candidateModels = ['gemini-flash-latest', 'gemini-3.1-flash-lite', 'gemini-pro-latest'];
+  const postData = JSON.stringify({
+    contents: [{ parts: [{ text: promptText }] }],
+    generationConfig: {
+      temperature: 0.4,
+      responseMimeType: "application/json"
     }
-  } catch (err) {
-    console.warn('Gemini generation error, falling back to curriculum data:', err.message);
-    return null;
+  });
+
+  for (const model of candidateModels) {
+    try {
+      const res = await httpsRequest({
+        hostname: 'generativelanguage.googleapis.com',
+        path: `/v1beta/models/${model}:generateContent?key=${encodeURIComponent(GEMINI_API_KEY)}`,
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          'Content-Length': Buffer.byteLength(postData)
+        }
+      }, postData);
+
+      if (res.statusCode === 200) {
+        const parsedResp = JSON.parse(res.body);
+        const text = parsedResp.candidates?.[0]?.content?.parts?.[0]?.text || '';
+        const cleanJson = text.replace(/^```json/im, '').replace(/^```/im, '').replace(/```$/im, '').trim();
+        console.log(`✅ Gemini AI generation succeeded via model: ${model}`);
+        return JSON.parse(cleanJson);
+      } else if (res.statusCode === 503 || res.statusCode === 429) {
+        console.warn(`Model ${model} returned ${res.statusCode} (busy), trying next candidate...`);
+      } else {
+        console.warn(`Model ${model} returned ${res.statusCode}: ${res.body.slice(0, 120)}`);
+      }
+    } catch (err) {
+      console.warn(`Error querying model ${model}:`, err.message);
+    }
   }
+
+  console.log('ℹ️ All AI candidate models busy. Falling back to pre-computed curriculum dataset.');
+  return null;
 }
 
 // 5. SVG CARD RENDERERS (Tested Zero-Overlap Dynamic Engine)
@@ -535,23 +547,30 @@ async function publishToInstagram(imageUrl, caption) {
     throw new Error('IG_ACCESS_TOKEN is missing! Cannot publish live.');
   }
 
-  console.log(`📤 Step 1/3: Creating Instagram media container for account ${IG_ACCOUNT_ID}...`);
+  // Pure digits only for IG Account ID
+  const cleanAccountId = IG_ACCOUNT_ID.replace(/[^0-9]/g, '');
+  const cleanToken = IG_ACCESS_TOKEN.replace(/[\r\n\t\s]/g, '');
+
+  console.log(`📤 Step 1/3: Creating Instagram media container for account ${cleanAccountId}...`);
   const createParams = new URLSearchParams({
     image_url: imageUrl,
     caption: caption,
-    access_token: IG_ACCESS_TOKEN
+    access_token: cleanToken
   }).toString();
 
   const containerRes = await httpsRequest({
     hostname: 'graph.facebook.com',
-    path: `/v23.0/${IG_ACCOUNT_ID}/media`,
+    path: `/v23.0/${cleanAccountId}/media`,
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Length': Buffer.byteLength(createParams)
+    }
   }, createParams);
 
   const containerData = JSON.parse(containerRes.body || '{}');
   if (containerRes.statusCode !== 200 || !containerData.id) {
-    throw new Error('Failed to create media container: ' + containerRes.body);
+    throw new Error(`Failed to create media container (Status ${containerRes.statusCode}): ${containerRes.body}`);
   }
 
   const creationId = containerData.id;
@@ -563,19 +582,22 @@ async function publishToInstagram(imageUrl, caption) {
   console.log(`🚀 Step 3/3: Publishing container ${creationId} live...`);
   const publishParams = new URLSearchParams({
     creation_id: creationId,
-    access_token: IG_ACCESS_TOKEN
+    access_token: cleanToken
   }).toString();
 
   const publishRes = await httpsRequest({
     hostname: 'graph.facebook.com',
-    path: `/v23.0/${IG_ACCOUNT_ID}/media_publish`,
+    path: `/v23.0/${cleanAccountId}/media_publish`,
     method: 'POST',
-    headers: { 'Content-Type': 'application/x-www-form-urlencoded' }
+    headers: {
+      'Content-Type': 'application/x-www-form-urlencoded',
+      'Content-Length': Buffer.byteLength(publishParams)
+    }
   }, publishParams);
 
   const publishData = JSON.parse(publishRes.body || '{}');
   if (publishRes.statusCode !== 200 || !publishData.id) {
-    throw new Error('Failed to publish live media: ' + publishRes.body);
+    throw new Error(`Failed to publish live media (Status ${publishRes.statusCode}): ${publishRes.body}`);
   }
 
   const mediaId = publishData.id;
@@ -585,7 +607,7 @@ async function publishToInstagram(imageUrl, caption) {
   try {
     const permalinkRes = await httpsRequest({
       hostname: 'graph.facebook.com',
-      path: `/v23.0/${mediaId}?fields=permalink&access_token=${IG_ACCESS_TOKEN}`,
+      path: `/v23.0/${mediaId}?fields=permalink&access_token=${encodeURIComponent(cleanToken)}`,
       method: 'GET'
     });
     const permalinkData = JSON.parse(permalinkRes.body || '{}');
