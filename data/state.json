@@ -1,7 +1,19 @@
 {
-  "currentIndex": 0,
-  "totalPosted": 0,
-  "history": [],
-  "lastPostedTopic": null,
-  "lastPostedAt": null
+  "currentIndex": 1,
+  "totalPosted": 1,
+  "history": [
+    {
+      "index": 0,
+      "day": 1,
+      "slot": 1,
+      "headline": "HTML document structure",
+      "permalink": "https://www.instagram.com/p/DdEQFW8m2ht/",
+      "imageUrl": "https://iili.io/nF1sH0u.png",
+      "postedAt": "2026-09-09T12:22:55.412Z"
+    }
+  ],
+  "lastPostedTopic": "HTML document structure",
+  "lastPostedAt": "2026-09-09T12:22:55.412Z",
+  "lastPermalink": "https://www.instagram.com/p/DdEQFW8m2ht/",
+  "lastImageUrl": "https://iili.io/nF1sH0u.png"
 }
