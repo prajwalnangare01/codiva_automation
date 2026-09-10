@@ -1,6 +1,6 @@
 {
-  "currentIndex": 5,
-  "totalPosted": 5,
+  "currentIndex": 6,
+  "totalPosted": 6,
   "history": [
     {
       "index": 0,
@@ -46,10 +46,19 @@
       "permalink": "https://www.instagram.com/p/DdFABomozLh/",
       "imageUrl": "https://iili.io/nFev9St.png",
       "postedAt": "2026-09-09T19:21:52.359Z"
+    },
+    {
+      "index": 5,
+      "day": 3,
+      "slot": 2,
+      "headline": "<DIV> VS SEMANTIC ELEMENTS",
+      "permalink": "https://www.instagram.com/p/DdHjoq9m8Mf/",
+      "imageUrl": "https://iili.io/nKSlwBf.png",
+      "postedAt": "2026-09-10T19:11:31.664Z"
     }
   ],
-  "lastPostedTopic": "Semantic HTML",
-  "lastPostedAt": "2026-09-09T19:21:52.359Z",
-  "lastPermalink": "https://www.instagram.com/p/DdFABomozLh/",
-  "lastImageUrl": "https://iili.io/nFev9St.png"
+  "lastPostedTopic": "<DIV> VS SEMANTIC ELEMENTS",
+  "lastPostedAt": "2026-09-10T19:11:31.664Z",
+  "lastPermalink": "https://www.instagram.com/p/DdHjoq9m8Mf/",
+  "lastImageUrl": "https://iili.io/nKSlwBf.png"
 }
