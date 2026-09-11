@@ -1,6 +1,6 @@
 {
-  "currentIndex": 6,
-  "totalPosted": 6,
+  "currentIndex": 7,
+  "totalPosted": 7,
   "history": [
     {
       "index": 0,
@@ -55,10 +55,19 @@
       "permalink": "https://www.instagram.com/p/DdHjoq9m8Mf/",
       "imageUrl": "https://iili.io/nKSlwBf.png",
       "postedAt": "2026-09-10T19:11:31.664Z"
+    },
+    {
+      "index": 6,
+      "day": 4,
+      "slot": 1,
+      "headline": "Links & navigation",
+      "permalink": "https://www.instagram.com/p/DdJ6C3lGgAd/",
+      "imageUrl": "https://iili.io/nfMhpEJ.png",
+      "postedAt": "2026-09-11T17:05:47.725Z"
     }
   ],
-  "lastPostedTopic": "<DIV> VS SEMANTIC ELEMENTS",
-  "lastPostedAt": "2026-09-10T19:11:31.664Z",
-  "lastPermalink": "https://www.instagram.com/p/DdHjoq9m8Mf/",
-  "lastImageUrl": "https://iili.io/nKSlwBf.png"
+  "lastPostedTopic": "Links & navigation",
+  "lastPostedAt": "2026-09-11T17:05:47.725Z",
+  "lastPermalink": "https://www.instagram.com/p/DdJ6C3lGgAd/",
+  "lastImageUrl": "https://iili.io/nfMhpEJ.png"
 }
