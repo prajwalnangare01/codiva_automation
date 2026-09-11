@@ -1,6 +1,6 @@
 {
-  "currentIndex": 7,
-  "totalPosted": 7,
+  "currentIndex": 8,
+  "totalPosted": 8,
   "history": [
     {
       "index": 0,
@@ -64,10 +64,19 @@
       "permalink": "https://www.instagram.com/p/DdJ6C3lGgAd/",
       "imageUrl": "https://iili.io/nfMhpEJ.png",
       "postedAt": "2026-09-11T17:05:47.725Z"
+    },
+    {
+      "index": 7,
+      "day": 4,
+      "slot": 2,
+      "headline": "TARGET='_BLANK' SECURITY",
+      "permalink": "https://www.instagram.com/p/DdKIrJzmLrP/",
+      "imageUrl": "https://iili.io/nfWDLUG.png",
+      "postedAt": "2026-09-11T19:13:37.682Z"
     }
   ],
-  "lastPostedTopic": "Links & navigation",
-  "lastPostedAt": "2026-09-11T17:05:47.725Z",
-  "lastPermalink": "https://www.instagram.com/p/DdJ6C3lGgAd/",
-  "lastImageUrl": "https://iili.io/nfMhpEJ.png"
+  "lastPostedTopic": "TARGET='_BLANK' SECURITY",
+  "lastPostedAt": "2026-09-11T19:13:37.682Z",
+  "lastPermalink": "https://www.instagram.com/p/DdKIrJzmLrP/",
+  "lastImageUrl": "https://iili.io/nfWDLUG.png"
 }
