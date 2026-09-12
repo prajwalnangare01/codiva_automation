@@ -1,6 +1,6 @@
 {
-  "currentIndex": 8,
-  "totalPosted": 8,
+  "currentIndex": 9,
+  "totalPosted": 9,
   "history": [
     {
       "index": 0,
@@ -73,10 +73,19 @@
       "permalink": "https://www.instagram.com/p/DdKIrJzmLrP/",
       "imageUrl": "https://iili.io/nfWDLUG.png",
       "postedAt": "2026-09-11T19:13:37.682Z"
+    },
+    {
+      "index": 8,
+      "day": 5,
+      "slot": 1,
+      "headline": "Images",
+      "permalink": "https://www.instagram.com/p/DdMaUKlIH0f/",
+      "imageUrl": "https://iili.io/nq3HZT7.png",
+      "postedAt": "2026-09-12T16:26:16.694Z"
     }
   ],
-  "lastPostedTopic": "TARGET='_BLANK' SECURITY",
-  "lastPostedAt": "2026-09-11T19:13:37.682Z",
-  "lastPermalink": "https://www.instagram.com/p/DdKIrJzmLrP/",
-  "lastImageUrl": "https://iili.io/nfWDLUG.png"
+  "lastPostedTopic": "Images",
+  "lastPostedAt": "2026-09-12T16:26:16.694Z",
+  "lastPermalink": "https://www.instagram.com/p/DdMaUKlIH0f/",
+  "lastImageUrl": "https://iili.io/nq3HZT7.png"
 }
