@@ -1,6 +1,6 @@
 {
-  "currentIndex": 9,
-  "totalPosted": 9,
+  "currentIndex": 10,
+  "totalPosted": 10,
   "history": [
     {
       "index": 0,
@@ -82,10 +82,19 @@
       "permalink": "https://www.instagram.com/p/DdMaUKlIH0f/",
       "imageUrl": "https://iili.io/nq3HZT7.png",
       "postedAt": "2026-09-12T16:26:16.694Z"
+    },
+    {
+      "index": 9,
+      "day": 5,
+      "slot": 2,
+      "headline": "ALT + LAZY LOADING",
+      "permalink": "https://www.instagram.com/p/DdMpBBEmseD/",
+      "imageUrl": "https://iili.io/nqfat0F.png",
+      "postedAt": "2026-09-12T18:34:42.662Z"
     }
   ],
-  "lastPostedTopic": "Images",
-  "lastPostedAt": "2026-09-12T16:26:16.694Z",
-  "lastPermalink": "https://www.instagram.com/p/DdMaUKlIH0f/",
-  "lastImageUrl": "https://iili.io/nq3HZT7.png"
+  "lastPostedTopic": "ALT + LAZY LOADING",
+  "lastPostedAt": "2026-09-12T18:34:42.662Z",
+  "lastPermalink": "https://www.instagram.com/p/DdMpBBEmseD/",
+  "lastImageUrl": "https://iili.io/nqfat0F.png"
 }
