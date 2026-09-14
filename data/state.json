@@ -1,6 +1,6 @@
 {
-  "currentIndex": 13,
-  "totalPosted": 13,
+  "currentIndex": 14,
+  "totalPosted": 14,
   "history": [
     {
       "index": 0,
@@ -118,10 +118,19 @@
       "permalink": "https://www.instagram.com/p/DdR0Qc-ieai/",
       "imageUrl": "https://iili.io/nBykT7I.png",
       "postedAt": "2026-09-14T18:49:09.615Z"
+    },
+    {
+      "index": 13,
+      "day": 7,
+      "slot": 2,
+      "headline": "COMMON TABLE MISTAKES",
+      "permalink": "https://www.instagram.com/p/DdR_BWdAbdd/",
+      "imageUrl": "https://iili.io/nCHA0tn.png",
+      "postedAt": "2026-09-14T20:23:11.916Z"
     }
   ],
-  "lastPostedTopic": "Tables",
-  "lastPostedAt": "2026-09-14T18:49:09.615Z",
-  "lastPermalink": "https://www.instagram.com/p/DdR0Qc-ieai/",
-  "lastImageUrl": "https://iili.io/nBykT7I.png"
+  "lastPostedTopic": "COMMON TABLE MISTAKES",
+  "lastPostedAt": "2026-09-14T20:23:11.916Z",
+  "lastPermalink": "https://www.instagram.com/p/DdR_BWdAbdd/",
+  "lastImageUrl": "https://iili.io/nCHA0tn.png"
 }
