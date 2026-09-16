@@ -1,6 +1,6 @@
 {
-  "currentIndex": 16,
-  "totalPosted": 16,
+  "currentIndex": 17,
+  "totalPosted": 17,
   "history": [
     {
       "index": 0,
@@ -145,10 +145,19 @@
       "permalink": "https://www.instagram.com/p/DdUfn4fDPAa/",
       "imageUrl": "https://iili.io/nnBsEu9.png",
       "postedAt": "2026-09-15T19:46:33.257Z"
+    },
+    {
+      "index": 16,
+      "day": 9,
+      "slot": 1,
+      "headline": "Input types",
+      "permalink": "https://www.instagram.com/p/DdW2HmIFOxx/",
+      "imageUrl": "https://iili.io/noHRR7j.png",
+      "postedAt": "2026-09-16T17:41:35.869Z"
     }
   ],
-  "lastPostedTopic": "LABEL + FORM STRUCTURE",
-  "lastPostedAt": "2026-09-15T19:46:33.257Z",
-  "lastPermalink": "https://www.instagram.com/p/DdUfn4fDPAa/",
-  "lastImageUrl": "https://iili.io/nnBsEu9.png"
+  "lastPostedTopic": "Input types",
+  "lastPostedAt": "2026-09-16T17:41:35.869Z",
+  "lastPermalink": "https://www.instagram.com/p/DdW2HmIFOxx/",
+  "lastImageUrl": "https://iili.io/noHRR7j.png"
 }
