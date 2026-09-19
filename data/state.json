@@ -1,6 +1,6 @@
 {
-  "currentIndex": 21,
-  "totalPosted": 21,
+  "currentIndex": 22,
+  "totalPosted": 22,
   "history": [
     {
       "index": 0,
@@ -190,10 +190,19 @@
       "permalink": "https://www.instagram.com/p/DdediBlmBrw/",
       "imageUrl": "https://iili.io/nIgRKS1.png",
       "postedAt": "2026-09-19T16:40:41.652Z"
+    },
+    {
+      "index": 21,
+      "day": 11,
+      "slot": 2,
+      "headline": "SELECTORS CHEAT SHEET",
+      "permalink": "https://www.instagram.com/p/DdercEWjeMS/",
+      "imageUrl": "https://iili.io/nI4ZTJe.png",
+      "postedAt": "2026-09-19T18:42:15.404Z"
     }
   ],
-  "lastPostedTopic": "CSS syntax",
-  "lastPostedAt": "2026-09-19T16:40:41.652Z",
-  "lastPermalink": "https://www.instagram.com/p/DdediBlmBrw/",
-  "lastImageUrl": "https://iili.io/nIgRKS1.png"
+  "lastPostedTopic": "SELECTORS CHEAT SHEET",
+  "lastPostedAt": "2026-09-19T18:42:15.404Z",
+  "lastPermalink": "https://www.instagram.com/p/DdercEWjeMS/",
+  "lastImageUrl": "https://iili.io/nI4ZTJe.png"
 }
