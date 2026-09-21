@@ -1,6 +1,6 @@
 {
-  "currentIndex": 24,
-  "totalPosted": 24,
+  "currentIndex": 25,
+  "totalPosted": 25,
   "history": [
     {
       "index": 0,
@@ -217,10 +217,19 @@
       "permalink": "https://www.instagram.com/p/DdhSAkjjX-I/",
       "imageUrl": "https://iili.io/nT6sUQ9.png",
       "postedAt": "2026-09-20T18:57:42.552Z"
+    },
+    {
+      "index": 24,
+      "day": 13,
+      "slot": 1,
+      "headline": "Box model",
+      "permalink": "https://www.instagram.com/p/Ddj2KnEIIF_/",
+      "imageUrl": "https://iili.io/nuukYPf.png",
+      "postedAt": "2026-09-21T18:52:09.239Z"
     }
   ],
-  "lastPostedTopic": "WHY CSS ISN'T APPLYING",
-  "lastPostedAt": "2026-09-20T18:57:42.552Z",
-  "lastPermalink": "https://www.instagram.com/p/DdhSAkjjX-I/",
-  "lastImageUrl": "https://iili.io/nT6sUQ9.png"
+  "lastPostedTopic": "Box model",
+  "lastPostedAt": "2026-09-21T18:52:09.239Z",
+  "lastPermalink": "https://www.instagram.com/p/Ddj2KnEIIF_/",
+  "lastImageUrl": "https://iili.io/nuukYPf.png"
 }
