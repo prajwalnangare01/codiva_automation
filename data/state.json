@@ -1,6 +1,6 @@
 {
-  "currentIndex": 26,
-  "totalPosted": 26,
+  "currentIndex": 27,
+  "totalPosted": 27,
   "history": [
     {
       "index": 0,
@@ -235,10 +235,19 @@
       "permalink": "https://www.instagram.com/p/DdkBWmMGDBn/",
       "imageUrl": "https://iili.io/nuRJTLF.png",
       "postedAt": "2026-09-21T20:29:55.682Z"
+    },
+    {
+      "index": 26,
+      "day": 14,
+      "slot": 1,
+      "headline": "Width & height",
+      "permalink": "https://www.instagram.com/p/DdmS-FYmGhh/",
+      "imageUrl": "https://iili.io/nu4MSql.png",
+      "postedAt": "2026-09-22T17:42:23.969Z"
     }
   ],
-  "lastPostedTopic": "BOX-SIZING: BORDER-BOX",
-  "lastPostedAt": "2026-09-21T20:29:55.682Z",
-  "lastPermalink": "https://www.instagram.com/p/DdkBWmMGDBn/",
-  "lastImageUrl": "https://iili.io/nuRJTLF.png"
+  "lastPostedTopic": "Width & height",
+  "lastPostedAt": "2026-09-22T17:42:23.969Z",
+  "lastPermalink": "https://www.instagram.com/p/DdmS-FYmGhh/",
+  "lastImageUrl": "https://iili.io/nu4MSql.png"
 }
