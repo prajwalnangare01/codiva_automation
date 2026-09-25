@@ -1,6 +1,6 @@
 {
-  "currentIndex": 32,
-  "totalPosted": 32,
+  "currentIndex": 33,
+  "totalPosted": 33,
   "history": [
     {
       "index": 0,
@@ -289,10 +289,19 @@
       "permalink": "https://www.instagram.com/p/DdrsxBVnWxM/",
       "imageUrl": "https://iili.io/nRHJdEG.png",
       "postedAt": "2026-09-24T20:03:56.961Z"
+    },
+    {
+      "index": 32,
+      "day": 17,
+      "slot": 1,
+      "headline": "z-index",
+      "permalink": "https://www.instagram.com/p/DduDnuZDK5V/",
+      "imageUrl": "https://iili.io/nR0gcTN.png",
+      "postedAt": "2026-09-25T18:02:05.188Z"
     }
   ],
-  "lastPostedTopic": "RELATIVE VS ABSOLUTE",
-  "lastPostedAt": "2026-09-24T20:03:56.961Z",
-  "lastPermalink": "https://www.instagram.com/p/DdrsxBVnWxM/",
-  "lastImageUrl": "https://iili.io/nRHJdEG.png"
+  "lastPostedTopic": "z-index",
+  "lastPostedAt": "2026-09-25T18:02:05.188Z",
+  "lastPermalink": "https://www.instagram.com/p/DduDnuZDK5V/",
+  "lastImageUrl": "https://iili.io/nR0gcTN.png"
 }
