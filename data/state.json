@@ -1,6 +1,6 @@
 {
-  "currentIndex": 33,
-  "totalPosted": 33,
+  "currentIndex": 34,
+  "totalPosted": 34,
   "history": [
     {
       "index": 0,
@@ -298,10 +298,19 @@
       "permalink": "https://www.instagram.com/p/DduDnuZDK5V/",
       "imageUrl": "https://iili.io/nR0gcTN.png",
       "postedAt": "2026-09-25T18:02:05.188Z"
+    },
+    {
+      "index": 33,
+      "day": 17,
+      "slot": 2,
+      "headline": "WHY Z-INDEX DOESN'T WORK",
+      "permalink": "https://www.instagram.com/p/DduRvKjkiKU/",
+      "imageUrl": "https://iili.io/nRGoO6Q.png",
+      "postedAt": "2026-09-25T20:05:28.373Z"
     }
   ],
-  "lastPostedTopic": "z-index",
-  "lastPostedAt": "2026-09-25T18:02:05.188Z",
-  "lastPermalink": "https://www.instagram.com/p/DduDnuZDK5V/",
-  "lastImageUrl": "https://iili.io/nR0gcTN.png"
+  "lastPostedTopic": "WHY Z-INDEX DOESN'T WORK",
+  "lastPostedAt": "2026-09-25T20:05:28.373Z",
+  "lastPermalink": "https://www.instagram.com/p/DduRvKjkiKU/",
+  "lastImageUrl": "https://iili.io/nRGoO6Q.png"
 }
