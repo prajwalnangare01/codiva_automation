@@ -1,6 +1,6 @@
 {
-  "currentIndex": 41,
-  "totalPosted": 41,
+  "currentIndex": 42,
+  "totalPosted": 42,
   "history": [
     {
       "index": 0,
@@ -370,10 +370,19 @@
       "permalink": "https://www.instagram.com/p/Dd4cHHUmNng/",
       "imageUrl": "https://iili.io/nYwoVXS.png",
       "postedAt": "2026-09-29T18:48:32.753Z"
+    },
+    {
+      "index": 41,
+      "day": 21,
+      "slot": 2,
+      "headline": "GRID VS FLEXBOX",
+      "permalink": "https://www.instagram.com/p/Dd4q2bKknWx/",
+      "imageUrl": "https://iili.io/nYOgpVe.png",
+      "postedAt": "2026-09-29T20:57:19.752Z"
     }
   ],
-  "lastPostedTopic": "Grid architecture",
-  "lastPostedAt": "2026-09-29T18:48:32.753Z",
-  "lastPermalink": "https://www.instagram.com/p/Dd4cHHUmNng/",
-  "lastImageUrl": "https://iili.io/nYwoVXS.png"
+  "lastPostedTopic": "GRID VS FLEXBOX",
+  "lastPostedAt": "2026-09-29T20:57:19.752Z",
+  "lastPermalink": "https://www.instagram.com/p/Dd4q2bKknWx/",
+  "lastImageUrl": "https://iili.io/nYOgpVe.png"
 }
