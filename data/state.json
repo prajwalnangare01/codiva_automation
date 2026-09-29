@@ -1,6 +1,6 @@
 {
-  "currentIndex": 40,
-  "totalPosted": 40,
+  "currentIndex": 41,
+  "totalPosted": 41,
   "history": [
     {
       "index": 0,
@@ -361,10 +361,19 @@
       "permalink": "https://www.instagram.com/p/Dd2OzhrGPN4/",
       "imageUrl": "https://iili.io/n7ZnLDF.png",
       "postedAt": "2026-09-28T22:13:46.682Z"
+    },
+    {
+      "index": 40,
+      "day": 21,
+      "slot": 1,
+      "headline": "Grid architecture",
+      "permalink": "https://www.instagram.com/p/Dd4cHHUmNng/",
+      "imageUrl": "https://iili.io/nYwoVXS.png",
+      "postedAt": "2026-09-29T18:48:32.753Z"
     }
   ],
-  "lastPostedTopic": "GRID FUNDAMENTALS",
-  "lastPostedAt": "2026-09-28T22:13:46.682Z",
-  "lastPermalink": "https://www.instagram.com/p/Dd2OzhrGPN4/",
-  "lastImageUrl": "https://iili.io/n7ZnLDF.png"
+  "lastPostedTopic": "Grid architecture",
+  "lastPostedAt": "2026-09-29T18:48:32.753Z",
+  "lastPermalink": "https://www.instagram.com/p/Dd4cHHUmNng/",
+  "lastImageUrl": "https://iili.io/nYwoVXS.png"
 }
