@@ -1,6 +1,6 @@
 {
-  "currentIndex": 42,
-  "totalPosted": 42,
+  "currentIndex": 43,
+  "totalPosted": 43,
   "history": [
     {
       "index": 0,
@@ -379,10 +379,19 @@
       "permalink": "https://www.instagram.com/p/Dd4q2bKknWx/",
       "imageUrl": "https://iili.io/nYOgpVe.png",
       "postedAt": "2026-09-29T20:57:19.752Z"
+    },
+    {
+      "index": 42,
+      "day": 22,
+      "slot": 1,
+      "headline": "Responsive design",
+      "permalink": "https://www.instagram.com/p/Dd7PjNFEtYt/",
+      "imageUrl": "https://iili.io/naMntQp.png",
+      "postedAt": "2026-09-30T20:56:30.214Z"
     }
   ],
-  "lastPostedTopic": "GRID VS FLEXBOX",
-  "lastPostedAt": "2026-09-29T20:57:19.752Z",
-  "lastPermalink": "https://www.instagram.com/p/Dd4q2bKknWx/",
-  "lastImageUrl": "https://iili.io/nYOgpVe.png"
+  "lastPostedTopic": "Responsive design",
+  "lastPostedAt": "2026-09-30T20:56:30.214Z",
+  "lastPermalink": "https://www.instagram.com/p/Dd7PjNFEtYt/",
+  "lastImageUrl": "https://iili.io/naMntQp.png"
 }
