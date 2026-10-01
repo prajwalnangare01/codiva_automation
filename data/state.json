@@ -1,6 +1,6 @@
 {
-  "currentIndex": 43,
-  "totalPosted": 43,
+  "currentIndex": 44,
+  "totalPosted": 44,
   "history": [
     {
       "index": 0,
@@ -388,10 +388,19 @@
       "permalink": "https://www.instagram.com/p/Dd7PjNFEtYt/",
       "imageUrl": "https://iili.io/naMntQp.png",
       "postedAt": "2026-09-30T20:56:30.214Z"
+    },
+    {
+      "index": 43,
+      "day": 22,
+      "slot": 2,
+      "headline": "MOBILE-FIRST CSS",
+      "permalink": "https://www.instagram.com/p/Dd9m5ELAVqW/",
+      "imageUrl": "https://iili.io/ncFgi9S.png",
+      "postedAt": "2026-10-01T18:58:58.366Z"
     }
   ],
-  "lastPostedTopic": "Responsive design",
-  "lastPostedAt": "2026-09-30T20:56:30.214Z",
-  "lastPermalink": "https://www.instagram.com/p/Dd7PjNFEtYt/",
-  "lastImageUrl": "https://iili.io/naMntQp.png"
+  "lastPostedTopic": "MOBILE-FIRST CSS",
+  "lastPostedAt": "2026-10-01T18:58:58.366Z",
+  "lastPermalink": "https://www.instagram.com/p/Dd9m5ELAVqW/",
+  "lastImageUrl": "https://iili.io/ncFgi9S.png"
 }
