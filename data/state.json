@@ -1,6 +1,6 @@
 {
-  "currentIndex": 45,
-  "totalPosted": 45,
+  "currentIndex": 46,
+  "totalPosted": 46,
   "history": [
     {
       "index": 0,
@@ -406,10 +406,19 @@
       "permalink": "https://www.instagram.com/p/Dd92F5QGB2R/",
       "imageUrl": "https://iili.io/ncq3W0J.png",
       "postedAt": "2026-10-01T21:11:45.618Z"
+    },
+    {
+      "index": 45,
+      "day": 23,
+      "slot": 2,
+      "headline": "COMMON RESPONSIVE MISTAKES",
+      "permalink": "https://www.instagram.com/p/DeAYpDtgRF8/",
+      "imageUrl": "https://iili.io/nc45zfR.png",
+      "postedAt": "2026-10-02T20:52:08.381Z"
     }
   ],
-  "lastPostedTopic": "Media queries",
-  "lastPostedAt": "2026-10-01T21:11:45.618Z",
-  "lastPermalink": "https://www.instagram.com/p/Dd92F5QGB2R/",
-  "lastImageUrl": "https://iili.io/ncq3W0J.png"
+  "lastPostedTopic": "COMMON RESPONSIVE MISTAKES",
+  "lastPostedAt": "2026-10-02T20:52:08.381Z",
+  "lastPermalink": "https://www.instagram.com/p/DeAYpDtgRF8/",
+  "lastImageUrl": "https://iili.io/nc45zfR.png"
 }
