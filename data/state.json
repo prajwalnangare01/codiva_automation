@@ -1,6 +1,6 @@
 {
-  "currentIndex": 47,
-  "totalPosted": 47,
+  "currentIndex": 48,
+  "totalPosted": 48,
   "history": [
     {
       "index": 0,
@@ -424,10 +424,19 @@
       "permalink": "https://www.instagram.com/p/DeCmZ7EDFQZ/",
       "imageUrl": "https://iili.io/nlRQRIt.png",
       "postedAt": "2026-10-03T17:30:50.351Z"
+    },
+    {
+      "index": 47,
+      "day": 24,
+      "slot": 2,
+      "headline": "BUILDING A THEME",
+      "permalink": "https://www.instagram.com/p/DeCy6lPAb_e/",
+      "imageUrl": "https://iili.io/nl7kObf.png",
+      "postedAt": "2026-10-03T19:20:13.693Z"
     }
   ],
-  "lastPostedTopic": "CSS variables",
-  "lastPostedAt": "2026-10-03T17:30:50.351Z",
-  "lastPermalink": "https://www.instagram.com/p/DeCmZ7EDFQZ/",
-  "lastImageUrl": "https://iili.io/nlRQRIt.png"
+  "lastPostedTopic": "BUILDING A THEME",
+  "lastPostedAt": "2026-10-03T19:20:13.693Z",
+  "lastPermalink": "https://www.instagram.com/p/DeCy6lPAb_e/",
+  "lastImageUrl": "https://iili.io/nl7kObf.png"
 }
