@@ -1,6 +1,6 @@
 {
-  "currentIndex": 50,
-  "totalPosted": 50,
+  "currentIndex": 51,
+  "totalPosted": 51,
   "history": [
     {
       "index": 0,
@@ -451,10 +451,19 @@
       "permalink": "https://www.instagram.com/p/DeFagnmj9DD/",
       "imageUrl": "https://iili.io/n0JC0ZP.png",
       "postedAt": "2026-10-04T19:44:41.010Z"
+    },
+    {
+      "index": 50,
+      "day": 26,
+      "slot": 1,
+      "headline": "calc() function",
+      "permalink": "https://www.instagram.com/p/DeIJ5GFGAaj/",
+      "imageUrl": "https://iili.io/n1qDYDG.png",
+      "postedAt": "2026-10-05T21:17:11.234Z"
     }
   ],
-  "lastPostedTopic": "REM VS EM VS PX",
-  "lastPostedAt": "2026-10-04T19:44:41.010Z",
-  "lastPermalink": "https://www.instagram.com/p/DeFagnmj9DD/",
-  "lastImageUrl": "https://iili.io/n0JC0ZP.png"
+  "lastPostedTopic": "calc() function",
+  "lastPostedAt": "2026-10-05T21:17:11.234Z",
+  "lastPermalink": "https://www.instagram.com/p/DeIJ5GFGAaj/",
+  "lastImageUrl": "https://iili.io/n1qDYDG.png"
 }
