@@ -1,6 +1,6 @@
 {
-  "currentIndex": 58,
-  "totalPosted": 58,
+  "currentIndex": 59,
+  "totalPosted": 59,
   "history": [
     {
       "index": 0,
@@ -523,10 +523,19 @@
       "permalink": "https://www.instagram.com/p/DeSb7ARGThe/",
       "imageUrl": "https://iili.io/nM23osR.png",
       "postedAt": "2026-10-09T21:07:09.417Z"
+    },
+    {
+      "index": 58,
+      "day": 30,
+      "slot": 1,
+      "headline": "CSS Pseudo-classes",
+      "permalink": "https://www.instagram.com/p/DeUq8j-l7OO/",
+      "imageUrl": "https://iili.io/nMjRYXa.png",
+      "postedAt": "2026-10-10T17:56:52.045Z"
     }
   ],
-  "lastPostedTopic": "TRANSITION VS @KEYFRAMES",
-  "lastPostedAt": "2026-10-09T21:07:09.417Z",
-  "lastPermalink": "https://www.instagram.com/p/DeSb7ARGThe/",
-  "lastImageUrl": "https://iili.io/nM23osR.png"
+  "lastPostedTopic": "CSS Pseudo-classes",
+  "lastPostedAt": "2026-10-10T17:56:52.045Z",
+  "lastPermalink": "https://www.instagram.com/p/DeUq8j-l7OO/",
+  "lastImageUrl": "https://iili.io/nMjRYXa.png"
 }
