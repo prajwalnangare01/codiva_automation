@@ -1,6 +1,6 @@
 {
-  "currentIndex": 59,
-  "totalPosted": 59,
+  "currentIndex": 60,
+  "totalPosted": 60,
   "history": [
     {
       "index": 0,
@@ -532,10 +532,19 @@
       "permalink": "https://www.instagram.com/p/DeUq8j-l7OO/",
       "imageUrl": "https://iili.io/nMjRYXa.png",
       "postedAt": "2026-10-10T17:56:52.045Z"
+    },
+    {
+      "index": 59,
+      "day": 30,
+      "slot": 2,
+      "headline": ":HOVER, :FOCUS, :NTH-CHILD",
+      "permalink": "https://www.instagram.com/p/DeU6mk7mGO9/",
+      "imageUrl": "https://iili.io/nMNOSff.png",
+      "postedAt": "2026-10-10T20:13:42.103Z"
     }
   ],
-  "lastPostedTopic": "CSS Pseudo-classes",
-  "lastPostedAt": "2026-10-10T17:56:52.045Z",
-  "lastPermalink": "https://www.instagram.com/p/DeUq8j-l7OO/",
-  "lastImageUrl": "https://iili.io/nMjRYXa.png"
+  "lastPostedTopic": ":HOVER, :FOCUS, :NTH-CHILD",
+  "lastPostedAt": "2026-10-10T20:13:42.103Z",
+  "lastPermalink": "https://www.instagram.com/p/DeU6mk7mGO9/",
+  "lastImageUrl": "https://iili.io/nMNOSff.png"
 }
