@@ -1,6 +1,6 @@
 {
-  "currentIndex": 61,
-  "totalPosted": 61,
+  "currentIndex": 62,
+  "totalPosted": 62,
   "history": [
     {
       "index": 0,
@@ -550,10 +550,19 @@
       "permalink": "https://www.instagram.com/p/DeXSRNUF_U2/",
       "imageUrl": "https://iili.io/nVqENSV.png",
       "postedAt": "2026-10-11T18:18:56.916Z"
+    },
+    {
+      "index": 61,
+      "day": 31,
+      "slot": 2,
+      "headline": "::BEFORE & ::AFTER",
+      "permalink": "https://www.instagram.com/p/DeXhDgpl4la/",
+      "imageUrl": "https://iili.io/nVCrzb9.png",
+      "postedAt": "2026-10-11T20:28:10.049Z"
     }
   ],
-  "lastPostedTopic": "Pseudo-elements",
-  "lastPostedAt": "2026-10-11T18:18:56.916Z",
-  "lastPermalink": "https://www.instagram.com/p/DeXSRNUF_U2/",
-  "lastImageUrl": "https://iili.io/nVqENSV.png"
+  "lastPostedTopic": "::BEFORE & ::AFTER",
+  "lastPostedAt": "2026-10-11T20:28:10.049Z",
+  "lastPermalink": "https://www.instagram.com/p/DeXhDgpl4la/",
+  "lastImageUrl": "https://iili.io/nVCrzb9.png"
 }
