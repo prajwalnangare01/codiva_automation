@@ -1,6 +1,6 @@
 {
-  "currentIndex": 60,
-  "totalPosted": 60,
+  "currentIndex": 61,
+  "totalPosted": 61,
   "history": [
     {
       "index": 0,
@@ -541,10 +541,19 @@
       "permalink": "https://www.instagram.com/p/DeU6mk7mGO9/",
       "imageUrl": "https://iili.io/nMNOSff.png",
       "postedAt": "2026-10-10T20:13:42.103Z"
+    },
+    {
+      "index": 60,
+      "day": 31,
+      "slot": 1,
+      "headline": "Pseudo-elements",
+      "permalink": "https://www.instagram.com/p/DeXSRNUF_U2/",
+      "imageUrl": "https://iili.io/nVqENSV.png",
+      "postedAt": "2026-10-11T18:18:56.916Z"
     }
   ],
-  "lastPostedTopic": ":HOVER, :FOCUS, :NTH-CHILD",
-  "lastPostedAt": "2026-10-10T20:13:42.103Z",
-  "lastPermalink": "https://www.instagram.com/p/DeU6mk7mGO9/",
-  "lastImageUrl": "https://iili.io/nMNOSff.png"
+  "lastPostedTopic": "Pseudo-elements",
+  "lastPostedAt": "2026-10-11T18:18:56.916Z",
+  "lastPermalink": "https://www.instagram.com/p/DeXSRNUF_U2/",
+  "lastImageUrl": "https://iili.io/nVqENSV.png"
 }
