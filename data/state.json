@@ -1,6 +1,6 @@
 {
-  "currentIndex": 62,
-  "totalPosted": 62,
+  "currentIndex": 63,
+  "totalPosted": 63,
   "history": [
     {
       "index": 0,
@@ -559,10 +559,19 @@
       "permalink": "https://www.instagram.com/p/DeXhDgpl4la/",
       "imageUrl": "https://iili.io/nVCrzb9.png",
       "postedAt": "2026-10-11T20:28:10.049Z"
+    },
+    {
+      "index": 62,
+      "day": 32,
+      "slot": 1,
+      "headline": "CSS architecture",
+      "permalink": "https://www.instagram.com/p/DeaPJQyD8i6/",
+      "imageUrl": "https://iili.io/nWHGG6J.png",
+      "postedAt": "2026-10-12T21:49:24.470Z"
     }
   ],
-  "lastPostedTopic": "::BEFORE & ::AFTER",
-  "lastPostedAt": "2026-10-11T20:28:10.049Z",
-  "lastPermalink": "https://www.instagram.com/p/DeXhDgpl4la/",
-  "lastImageUrl": "https://iili.io/nVCrzb9.png"
+  "lastPostedTopic": "CSS architecture",
+  "lastPostedAt": "2026-10-12T21:49:24.470Z",
+  "lastPermalink": "https://www.instagram.com/p/DeaPJQyD8i6/",
+  "lastImageUrl": "https://iili.io/nWHGG6J.png"
 }
