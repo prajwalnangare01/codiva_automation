@@ -1,6 +1,6 @@
 {
-  "currentIndex": 65,
-  "totalPosted": 65,
+  "currentIndex": 66,
+  "totalPosted": 66,
   "history": [
     {
       "index": 0,
@@ -586,10 +586,19 @@
       "permalink": "https://www.instagram.com/p/Decm9zVEgCS/",
       "imageUrl": "https://iili.io/nXqdU0v.png",
       "postedAt": "2026-10-13T19:56:03.276Z"
+    },
+    {
+      "index": 65,
+      "day": 33,
+      "slot": 2,
+      "headline": "JS IN BROWSER VS NODE",
+      "permalink": "https://www.instagram.com/p/Decxo0cGhB8/",
+      "imageUrl": "https://iili.io/nXB705N.png",
+      "postedAt": "2026-10-13T21:29:19.633Z"
     }
   ],
-  "lastPostedTopic": "JS introduction",
-  "lastPostedAt": "2026-10-13T19:56:03.276Z",
-  "lastPermalink": "https://www.instagram.com/p/Decm9zVEgCS/",
-  "lastImageUrl": "https://iili.io/nXqdU0v.png"
+  "lastPostedTopic": "JS IN BROWSER VS NODE",
+  "lastPostedAt": "2026-10-13T21:29:19.633Z",
+  "lastPermalink": "https://www.instagram.com/p/Decxo0cGhB8/",
+  "lastImageUrl": "https://iili.io/nXB705N.png"
 }
