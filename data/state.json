@@ -1,6 +1,6 @@
 {
-  "currentIndex": 64,
-  "totalPosted": 64,
+  "currentIndex": 65,
+  "totalPosted": 65,
   "history": [
     {
       "index": 0,
@@ -577,10 +577,19 @@
       "permalink": "https://www.instagram.com/p/DeaYbARAeAA/",
       "imageUrl": "https://iili.io/nWJ1lpI.png",
       "postedAt": "2026-10-12T23:10:27.040Z"
+    },
+    {
+      "index": 64,
+      "day": 33,
+      "slot": 1,
+      "headline": "JS introduction",
+      "permalink": "https://www.instagram.com/p/Decm9zVEgCS/",
+      "imageUrl": "https://iili.io/nXqdU0v.png",
+      "postedAt": "2026-10-13T19:56:03.276Z"
     }
   ],
-  "lastPostedTopic": "ORGANIZING LARGE CSS",
-  "lastPostedAt": "2026-10-12T23:10:27.040Z",
-  "lastPermalink": "https://www.instagram.com/p/DeaYbARAeAA/",
-  "lastImageUrl": "https://iili.io/nWJ1lpI.png"
+  "lastPostedTopic": "JS introduction",
+  "lastPostedAt": "2026-10-13T19:56:03.276Z",
+  "lastPermalink": "https://www.instagram.com/p/Decm9zVEgCS/",
+  "lastImageUrl": "https://iili.io/nXqdU0v.png"
 }
