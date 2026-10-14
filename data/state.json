@@ -1,6 +1,6 @@
 {
-  "currentIndex": 66,
-  "totalPosted": 66,
+  "currentIndex": 67,
+  "totalPosted": 67,
   "history": [
     {
       "index": 0,
@@ -595,10 +595,19 @@
       "permalink": "https://www.instagram.com/p/Decxo0cGhB8/",
       "imageUrl": "https://iili.io/nXB705N.png",
       "postedAt": "2026-10-13T21:29:19.633Z"
+    },
+    {
+      "index": 66,
+      "day": 34,
+      "slot": 1,
+      "headline": "let, const, var",
+      "permalink": "https://www.instagram.com/p/Dee_TzPmjOn/",
+      "imageUrl": "https://iili.io/nh2MWtj.png",
+      "postedAt": "2026-10-14T18:07:13.813Z"
     }
   ],
-  "lastPostedTopic": "JS IN BROWSER VS NODE",
-  "lastPostedAt": "2026-10-13T21:29:19.633Z",
-  "lastPermalink": "https://www.instagram.com/p/Decxo0cGhB8/",
-  "lastImageUrl": "https://iili.io/nXB705N.png"
+  "lastPostedTopic": "let, const, var",
+  "lastPostedAt": "2026-10-14T18:07:13.813Z",
+  "lastPermalink": "https://www.instagram.com/p/Dee_TzPmjOn/",
+  "lastImageUrl": "https://iili.io/nh2MWtj.png"
 }
