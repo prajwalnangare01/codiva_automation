@@ -1,6 +1,6 @@
 {
-  "currentIndex": 70,
-  "totalPosted": 70,
+  "currentIndex": 71,
+  "totalPosted": 71,
   "history": [
     {
       "index": 0,
@@ -631,10 +631,19 @@
       "permalink": "https://www.instagram.com/p/Dehw0C-F8-A/",
       "imageUrl": "https://iili.io/nhOhUwx.png",
       "postedAt": "2026-10-15T19:58:16.549Z"
+    },
+    {
+      "index": 70,
+      "day": 36,
+      "slot": 1,
+      "headline": "Operators",
+      "permalink": "https://www.instagram.com/p/DekFbkylDij/",
+      "imageUrl": "https://iili.io/nj5qtSe.png",
+      "postedAt": "2026-10-16T17:36:53.720Z"
     }
   ],
-  "lastPostedTopic": "TYPEOF SURPRISES",
-  "lastPostedAt": "2026-10-15T19:58:16.549Z",
-  "lastPermalink": "https://www.instagram.com/p/Dehw0C-F8-A/",
-  "lastImageUrl": "https://iili.io/nhOhUwx.png"
+  "lastPostedTopic": "Operators",
+  "lastPostedAt": "2026-10-16T17:36:53.720Z",
+  "lastPermalink": "https://www.instagram.com/p/DekFbkylDij/",
+  "lastImageUrl": "https://iili.io/nj5qtSe.png"
 }
