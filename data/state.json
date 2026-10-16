@@ -1,6 +1,6 @@
 {
-  "currentIndex": 71,
-  "totalPosted": 71,
+  "currentIndex": 72,
+  "totalPosted": 72,
   "history": [
     {
       "index": 0,
@@ -640,10 +640,19 @@
       "permalink": "https://www.instagram.com/p/DekFbkylDij/",
       "imageUrl": "https://iili.io/nj5qtSe.png",
       "postedAt": "2026-10-16T17:36:53.720Z"
+    },
+    {
+      "index": 71,
+      "day": 36,
+      "slot": 2,
+      "headline": "== VS ===",
+      "permalink": "https://www.instagram.com/p/DekThuhmh1J/",
+      "imageUrl": "https://iili.io/njYCUCv.png",
+      "postedAt": "2026-10-16T19:40:05.409Z"
     }
   ],
-  "lastPostedTopic": "Operators",
-  "lastPostedAt": "2026-10-16T17:36:53.720Z",
-  "lastPermalink": "https://www.instagram.com/p/DekFbkylDij/",
-  "lastImageUrl": "https://iili.io/nj5qtSe.png"
+  "lastPostedTopic": "== VS ===",
+  "lastPostedAt": "2026-10-16T19:40:05.409Z",
+  "lastPermalink": "https://www.instagram.com/p/DekThuhmh1J/",
+  "lastImageUrl": "https://iili.io/njYCUCv.png"
 }
