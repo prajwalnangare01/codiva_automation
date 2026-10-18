@@ -1,6 +1,6 @@
 {
-  "currentIndex": 75,
-  "totalPosted": 75,
+  "currentIndex": 76,
+  "totalPosted": 76,
   "history": [
     {
       "index": 0,
@@ -676,10 +676,19 @@
       "permalink": "https://www.instagram.com/p/DepI5n1HTLd/",
       "imageUrl": "https://iili.io/nwFM80b.png",
       "postedAt": "2026-10-18T16:43:27.728Z"
+    },
+    {
+      "index": 75,
+      "day": 38,
+      "slot": 2,
+      "headline": "NAN IN ARRAYS",
+      "permalink": "https://www.instagram.com/p/DepW5JbEuk7/",
+      "imageUrl": "https://iili.io/nwflhYl.png",
+      "postedAt": "2026-10-18T18:45:44.794Z"
     }
   ],
-  "lastPostedTopic": "Numbers",
-  "lastPostedAt": "2026-10-18T16:43:27.728Z",
-  "lastPermalink": "https://www.instagram.com/p/DepI5n1HTLd/",
-  "lastImageUrl": "https://iili.io/nwFM80b.png"
+  "lastPostedTopic": "NAN IN ARRAYS",
+  "lastPostedAt": "2026-10-18T18:45:44.794Z",
+  "lastPermalink": "https://www.instagram.com/p/DepW5JbEuk7/",
+  "lastImageUrl": "https://iili.io/nwflhYl.png"
 }
