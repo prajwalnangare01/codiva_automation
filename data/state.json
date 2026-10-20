@@ -1,6 +1,6 @@
 {
-  "currentIndex": 78,
-  "totalPosted": 78,
+  "currentIndex": 79,
+  "totalPosted": 79,
   "history": [
     {
       "index": 0,
@@ -703,10 +703,19 @@
       "permalink": "https://www.instagram.com/p/DesMVdvFJme/",
       "imageUrl": "https://iili.io/nwQhK8B.png",
       "postedAt": "2026-10-19T21:11:09.479Z"
+    },
+    {
+      "index": 78,
+      "day": 40,
+      "slot": 1,
+      "headline": "Ternary operator",
+      "permalink": "https://www.instagram.com/p/DeucHifjLme/",
+      "imageUrl": "https://iili.io/nNXVUKv.png",
+      "postedAt": "2026-10-20T18:07:32.353Z"
     }
   ],
-  "lastPostedTopic": "CLEANER CONDITIONS",
-  "lastPostedAt": "2026-10-19T21:11:09.479Z",
-  "lastPermalink": "https://www.instagram.com/p/DesMVdvFJme/",
-  "lastImageUrl": "https://iili.io/nwQhK8B.png"
+  "lastPostedTopic": "Ternary operator",
+  "lastPostedAt": "2026-10-20T18:07:32.353Z",
+  "lastPermalink": "https://www.instagram.com/p/DeucHifjLme/",
+  "lastImageUrl": "https://iili.io/nNXVUKv.png"
 }
