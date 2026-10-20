@@ -1,6 +1,6 @@
 {
-  "currentIndex": 79,
-  "totalPosted": 79,
+  "currentIndex": 80,
+  "totalPosted": 80,
   "history": [
     {
       "index": 0,
@@ -712,10 +712,19 @@
       "permalink": "https://www.instagram.com/p/DeucHifjLme/",
       "imageUrl": "https://iili.io/nNXVUKv.png",
       "postedAt": "2026-10-20T18:07:32.353Z"
+    },
+    {
+      "index": 79,
+      "day": 40,
+      "slot": 2,
+      "headline": "Nested ternary mistakes",
+      "permalink": "https://www.instagram.com/p/DeuplWTk0KP/",
+      "imageUrl": "https://iili.io/nNjp0yG.png",
+      "postedAt": "2026-10-20T20:05:16.233Z"
     }
   ],
-  "lastPostedTopic": "Ternary operator",
-  "lastPostedAt": "2026-10-20T18:07:32.353Z",
-  "lastPermalink": "https://www.instagram.com/p/DeucHifjLme/",
-  "lastImageUrl": "https://iili.io/nNXVUKv.png"
+  "lastPostedTopic": "Nested ternary mistakes",
+  "lastPostedAt": "2026-10-20T20:05:16.233Z",
+  "lastPermalink": "https://www.instagram.com/p/DeuplWTk0KP/",
+  "lastImageUrl": "https://iili.io/nNjp0yG.png"
 }
