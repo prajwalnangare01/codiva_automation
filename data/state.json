@@ -1,6 +1,6 @@
 {
-  "currentIndex": 80,
-  "totalPosted": 80,
+  "currentIndex": 81,
+  "totalPosted": 81,
   "history": [
     {
       "index": 0,
@@ -721,10 +721,19 @@
       "permalink": "https://www.instagram.com/p/DeuplWTk0KP/",
       "imageUrl": "https://iili.io/nNjp0yG.png",
       "postedAt": "2026-10-20T20:05:16.233Z"
+    },
+    {
+      "index": 80,
+      "day": 41,
+      "slot": 1,
+      "headline": "Loops",
+      "permalink": "https://www.instagram.com/p/DexBRihFypR/",
+      "imageUrl": "https://iili.io/nOa25Yu.png",
+      "postedAt": "2026-10-21T18:10:42.616Z"
     }
   ],
-  "lastPostedTopic": "Nested ternary mistakes",
-  "lastPostedAt": "2026-10-20T20:05:16.233Z",
-  "lastPermalink": "https://www.instagram.com/p/DeuplWTk0KP/",
-  "lastImageUrl": "https://iili.io/nNjp0yG.png"
+  "lastPostedTopic": "Loops",
+  "lastPostedAt": "2026-10-21T18:10:42.616Z",
+  "lastPermalink": "https://www.instagram.com/p/DexBRihFypR/",
+  "lastImageUrl": "https://iili.io/nOa25Yu.png"
 }
