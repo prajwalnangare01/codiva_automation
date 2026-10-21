@@ -1,6 +1,6 @@
 {
-  "currentIndex": 81,
-  "totalPosted": 81,
+  "currentIndex": 82,
+  "totalPosted": 82,
   "history": [
     {
       "index": 0,
@@ -730,10 +730,19 @@
       "permalink": "https://www.instagram.com/p/DexBRihFypR/",
       "imageUrl": "https://iili.io/nOa25Yu.png",
       "postedAt": "2026-10-21T18:10:42.616Z"
+    },
+    {
+      "index": 81,
+      "day": 41,
+      "slot": 2,
+      "headline": "FOR VS WHILE",
+      "permalink": "https://www.instagram.com/p/DexPu70kjTe/",
+      "imageUrl": "https://iili.io/nOlOytp.png",
+      "postedAt": "2026-10-21T20:17:05.528Z"
     }
   ],
-  "lastPostedTopic": "Loops",
-  "lastPostedAt": "2026-10-21T18:10:42.616Z",
-  "lastPermalink": "https://www.instagram.com/p/DexBRihFypR/",
-  "lastImageUrl": "https://iili.io/nOa25Yu.png"
+  "lastPostedTopic": "FOR VS WHILE",
+  "lastPostedAt": "2026-10-21T20:17:05.528Z",
+  "lastPermalink": "https://www.instagram.com/p/DexPu70kjTe/",
+  "lastImageUrl": "https://iili.io/nOlOytp.png"
 }
