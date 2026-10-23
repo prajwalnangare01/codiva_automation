@@ -1,6 +1,6 @@
 {
-  "currentIndex": 84,
-  "totalPosted": 84,
+  "currentIndex": 85,
+  "totalPosted": 85,
   "history": [
     {
       "index": 0,
@@ -757,10 +757,19 @@
       "permalink": "https://www.instagram.com/p/De2JRw4DCz0/",
       "imageUrl": "https://iili.io/neN4PVI.png",
       "postedAt": "2026-10-23T17:56:50.485Z"
+    },
+    {
+      "index": 84,
+      "day": 43,
+      "slot": 1,
+      "headline": "Functions",
+      "permalink": "https://www.instagram.com/p/De2XzLrF60x/",
+      "imageUrl": "https://iili.io/ne8NLW7.png",
+      "postedAt": "2026-10-23T20:03:45.032Z"
     }
   ],
-  "lastPostedTopic": "for...in vs for...of",
-  "lastPostedAt": "2026-10-23T17:56:50.485Z",
-  "lastPermalink": "https://www.instagram.com/p/De2JRw4DCz0/",
-  "lastImageUrl": "https://iili.io/neN4PVI.png"
+  "lastPostedTopic": "Functions",
+  "lastPostedAt": "2026-10-23T20:03:45.032Z",
+  "lastPermalink": "https://www.instagram.com/p/De2XzLrF60x/",
+  "lastImageUrl": "https://iili.io/ne8NLW7.png"
 }
