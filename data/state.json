@@ -1,6 +1,6 @@
 {
-  "currentIndex": 86,
-  "totalPosted": 86,
+  "currentIndex": 87,
+  "totalPosted": 87,
   "history": [
     {
       "index": 0,
@@ -775,10 +775,19 @@
       "permalink": "https://www.instagram.com/p/De7N31AjeQW/",
       "imageUrl": "https://iili.io/nk0u75X.png",
       "postedAt": "2026-10-25T17:13:12.786Z"
+    },
+    {
+      "index": 86,
+      "day": 44,
+      "slot": 1,
+      "headline": "Arrow functions",
+      "permalink": "https://www.instagram.com/p/De7bSnlF8o1/",
+      "imageUrl": "https://iili.io/nkEE3N4.png",
+      "postedAt": "2026-10-25T19:10:27.032Z"
     }
   ],
-  "lastPostedTopic": "FUNCTION DECLARATION VS EXPRESSION",
-  "lastPostedAt": "2026-10-25T17:13:12.786Z",
-  "lastPermalink": "https://www.instagram.com/p/De7N31AjeQW/",
-  "lastImageUrl": "https://iili.io/nk0u75X.png"
+  "lastPostedTopic": "Arrow functions",
+  "lastPostedAt": "2026-10-25T19:10:27.032Z",
+  "lastPermalink": "https://www.instagram.com/p/De7bSnlF8o1/",
+  "lastImageUrl": "https://iili.io/nkEE3N4.png"
 }
