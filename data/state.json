@@ -1,6 +1,6 @@
 {
-  "currentIndex": 88,
-  "totalPosted": 88,
+  "currentIndex": 89,
+  "totalPosted": 89,
   "history": [
     {
       "index": 0,
@@ -793,10 +793,19 @@
       "permalink": "https://www.instagram.com/p/De-Da9jlziW/",
       "imageUrl": "https://iili.io/nv2DFzx.png",
       "postedAt": "2026-10-26T19:39:34.802Z"
+    },
+    {
+      "index": 88,
+      "day": 45,
+      "slot": 1,
+      "headline": "Parameters",
+      "permalink": "https://www.instagram.com/p/De-NinoF-re/",
+      "imageUrl": "https://iili.io/nvFYLnn.png",
+      "postedAt": "2026-10-26T21:08:03.873Z"
     }
   ],
-  "lastPostedTopic": "ARROW FUNCTION GOTCHAS",
-  "lastPostedAt": "2026-10-26T19:39:34.802Z",
-  "lastPermalink": "https://www.instagram.com/p/De-Da9jlziW/",
-  "lastImageUrl": "https://iili.io/nv2DFzx.png"
+  "lastPostedTopic": "Parameters",
+  "lastPostedAt": "2026-10-26T21:08:03.873Z",
+  "lastPermalink": "https://www.instagram.com/p/De-NinoF-re/",
+  "lastImageUrl": "https://iili.io/nvFYLnn.png"
 }
