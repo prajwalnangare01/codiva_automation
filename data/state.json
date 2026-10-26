@@ -1,6 +1,6 @@
 {
-  "currentIndex": 87,
-  "totalPosted": 87,
+  "currentIndex": 88,
+  "totalPosted": 88,
   "history": [
     {
       "index": 0,
@@ -784,10 +784,19 @@
       "permalink": "https://www.instagram.com/p/De7bSnlF8o1/",
       "imageUrl": "https://iili.io/nkEE3N4.png",
       "postedAt": "2026-10-25T19:10:27.032Z"
+    },
+    {
+      "index": 87,
+      "day": 44,
+      "slot": 2,
+      "headline": "ARROW FUNCTION GOTCHAS",
+      "permalink": "https://www.instagram.com/p/De-Da9jlziW/",
+      "imageUrl": "https://iili.io/nv2DFzx.png",
+      "postedAt": "2026-10-26T19:39:34.802Z"
     }
   ],
-  "lastPostedTopic": "Arrow functions",
-  "lastPostedAt": "2026-10-25T19:10:27.032Z",
-  "lastPermalink": "https://www.instagram.com/p/De7bSnlF8o1/",
-  "lastImageUrl": "https://iili.io/nkEE3N4.png"
+  "lastPostedTopic": "ARROW FUNCTION GOTCHAS",
+  "lastPostedAt": "2026-10-26T19:39:34.802Z",
+  "lastPermalink": "https://www.instagram.com/p/De-Da9jlziW/",
+  "lastImageUrl": "https://iili.io/nv2DFzx.png"
 }
