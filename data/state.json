@@ -1,6 +1,6 @@
 {
-  "currentIndex": 89,
-  "totalPosted": 89,
+  "currentIndex": 90,
+  "totalPosted": 90,
   "history": [
     {
       "index": 0,
@@ -802,10 +802,19 @@
       "permalink": "https://www.instagram.com/p/De-NinoF-re/",
       "imageUrl": "https://iili.io/nvFYLnn.png",
       "postedAt": "2026-10-26T21:08:03.873Z"
+    },
+    {
+      "index": 89,
+      "day": 45,
+      "slot": 2,
+      "headline": "DEFAULT & REST PARAMETERS",
+      "permalink": "https://www.instagram.com/p/DfAivupFNX6/",
+      "imageUrl": "https://iili.io/nvNsuIe.png",
+      "postedAt": "2026-10-27T18:51:47.776Z"
     }
   ],
-  "lastPostedTopic": "Parameters",
-  "lastPostedAt": "2026-10-26T21:08:03.873Z",
-  "lastPermalink": "https://www.instagram.com/p/De-NinoF-re/",
-  "lastImageUrl": "https://iili.io/nvFYLnn.png"
+  "lastPostedTopic": "DEFAULT & REST PARAMETERS",
+  "lastPostedAt": "2026-10-27T18:51:47.776Z",
+  "lastPermalink": "https://www.instagram.com/p/DfAivupFNX6/",
+  "lastImageUrl": "https://iili.io/nvNsuIe.png"
 }
