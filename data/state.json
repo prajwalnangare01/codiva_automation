@@ -1,6 +1,6 @@
 {
-  "currentIndex": 90,
-  "totalPosted": 90,
+  "currentIndex": 91,
+  "totalPosted": 91,
   "history": [
     {
       "index": 0,
@@ -811,10 +811,19 @@
       "permalink": "https://www.instagram.com/p/DfAivupFNX6/",
       "imageUrl": "https://iili.io/nvNsuIe.png",
       "postedAt": "2026-10-27T18:51:47.776Z"
+    },
+    {
+      "index": 90,
+      "day": 46,
+      "slot": 1,
+      "headline": "Arrays",
+      "permalink": "https://www.instagram.com/p/DfAwVVuGEKd/",
+      "imageUrl": "https://iili.io/nvesDZX.png",
+      "postedAt": "2026-10-27T20:50:34.024Z"
     }
   ],
-  "lastPostedTopic": "DEFAULT & REST PARAMETERS",
-  "lastPostedAt": "2026-10-27T18:51:47.776Z",
-  "lastPermalink": "https://www.instagram.com/p/DfAivupFNX6/",
-  "lastImageUrl": "https://iili.io/nvNsuIe.png"
+  "lastPostedTopic": "Arrays",
+  "lastPostedAt": "2026-10-27T20:50:34.024Z",
+  "lastPermalink": "https://www.instagram.com/p/DfAwVVuGEKd/",
+  "lastImageUrl": "https://iili.io/nvesDZX.png"
 }
