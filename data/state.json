@@ -1,6 +1,6 @@
 {
-  "currentIndex": 91,
-  "totalPosted": 91,
+  "currentIndex": 92,
+  "totalPosted": 92,
   "history": [
     {
       "index": 0,
@@ -820,10 +820,19 @@
       "permalink": "https://www.instagram.com/p/DfAwVVuGEKd/",
       "imageUrl": "https://iili.io/nvesDZX.png",
       "postedAt": "2026-10-27T20:50:34.024Z"
+    },
+    {
+      "index": 91,
+      "day": 46,
+      "slot": 2,
+      "headline": "ESSENTIAL ARRAY METHODS",
+      "permalink": "https://www.instagram.com/p/DfDIcZoFOcm/",
+      "imageUrl": "https://iili.io/n8nxAfp.png",
+      "postedAt": "2026-10-28T18:59:40.959Z"
     }
   ],
-  "lastPostedTopic": "Arrays",
-  "lastPostedAt": "2026-10-27T20:50:34.024Z",
-  "lastPermalink": "https://www.instagram.com/p/DfAwVVuGEKd/",
-  "lastImageUrl": "https://iili.io/nvesDZX.png"
+  "lastPostedTopic": "ESSENTIAL ARRAY METHODS",
+  "lastPostedAt": "2026-10-28T18:59:40.959Z",
+  "lastPermalink": "https://www.instagram.com/p/DfDIcZoFOcm/",
+  "lastImageUrl": "https://iili.io/n8nxAfp.png"
 }
