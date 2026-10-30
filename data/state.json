@@ -1,6 +1,6 @@
 {
-  "currentIndex": 94,
-  "totalPosted": 94,
+  "currentIndex": 95,
+  "totalPosted": 95,
   "history": [
     {
       "index": 0,
@@ -847,10 +847,19 @@
       "permalink": "https://www.instagram.com/p/DfF9LhuD7Jg/",
       "imageUrl": "https://iili.io/n8ihLgI.png",
       "postedAt": "2026-10-29T21:19:01.985Z"
+    },
+    {
+      "index": 94,
+      "day": 48,
+      "slot": 1,
+      "headline": "Destructuring & Spread",
+      "permalink": "https://www.instagram.com/p/DfIQ7F6HOAx/",
+      "imageUrl": "https://iili.io/nSaQ0UG.png",
+      "postedAt": "2026-10-30T18:50:01.147Z"
     }
   ],
-  "lastPostedTopic": "OBJECT MANIPULATION",
-  "lastPostedAt": "2026-10-29T21:19:01.985Z",
-  "lastPermalink": "https://www.instagram.com/p/DfF9LhuD7Jg/",
-  "lastImageUrl": "https://iili.io/n8ihLgI.png"
+  "lastPostedTopic": "Destructuring & Spread",
+  "lastPostedAt": "2026-10-30T18:50:01.147Z",
+  "lastPermalink": "https://www.instagram.com/p/DfIQ7F6HOAx/",
+  "lastImageUrl": "https://iili.io/nSaQ0UG.png"
 }
