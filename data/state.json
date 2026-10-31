@@ -1,6 +1,6 @@
 {
-  "currentIndex": 96,
-  "totalPosted": 96,
+  "currentIndex": 97,
+  "totalPosted": 97,
   "history": [
     {
       "index": 0,
@@ -865,10 +865,19 @@
       "permalink": "https://www.instagram.com/p/DfKvX-nGAI7/",
       "imageUrl": "https://iili.io/nUzLFTB.png",
       "postedAt": "2026-10-31T17:54:35.904Z"
+    },
+    {
+      "index": 96,
+      "day": 49,
+      "slot": 1,
+      "headline": "map() method",
+      "permalink": "https://www.instagram.com/p/DfK_FjiGBhf/",
+      "imageUrl": "https://iili.io/nUAMqN4.png",
+      "postedAt": "2026-10-31T20:11:52.151Z"
     }
   ],
-  "lastPostedTopic": "REAL-WORLD USE CASES",
-  "lastPostedAt": "2026-10-31T17:54:35.904Z",
-  "lastPermalink": "https://www.instagram.com/p/DfKvX-nGAI7/",
-  "lastImageUrl": "https://iili.io/nUzLFTB.png"
+  "lastPostedTopic": "map() method",
+  "lastPostedAt": "2026-10-31T20:11:52.151Z",
+  "lastPermalink": "https://www.instagram.com/p/DfK_FjiGBhf/",
+  "lastImageUrl": "https://iili.io/nUAMqN4.png"
 }
