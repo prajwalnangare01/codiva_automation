@@ -1,16 +1,7 @@
 {
-  "currentIndex": 101,
-  "totalPosted": 101,
+  "currentIndex": 102,
+  "totalPosted": 102,
   "history": [
-    {
-      "index": 1,
-      "day": 1,
-      "slot": 2,
-      "headline": "DOCTYPE EXPLAINED",
-      "permalink": "https://www.instagram.com/p/DdEgvM3lBEO/",
-      "imageUrl": "https://iili.io/nFWNWb9.png",
-      "postedAt": "2026-09-09T14:48:24.854Z"
-    },
     {
       "index": 2,
       "day": 2,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfSuBXbDFuy/",
       "imageUrl": "https://iili.io/nPevre1.png",
       "postedAt": "2026-11-03T20:16:42.928Z"
+    },
+    {
+      "index": 101,
+      "day": 51,
+      "slot": 2,
+      "headline": "WHY REDUCE IS POWERFUL",
+      "permalink": "https://www.instagram.com/p/DfS5IjBGOOF/",
+      "imageUrl": "https://iili.io/nPveNTX.png",
+      "postedAt": "2026-11-03T21:53:46.539Z"
     }
   ],
-  "lastPostedTopic": "reduce() method",
-  "lastPostedAt": "2026-11-03T20:16:42.928Z",
-  "lastPermalink": "https://www.instagram.com/p/DfSuBXbDFuy/",
-  "lastImageUrl": "https://iili.io/nPevre1.png"
+  "lastPostedTopic": "WHY REDUCE IS POWERFUL",
+  "lastPostedAt": "2026-11-03T21:53:46.539Z",
+  "lastPermalink": "https://www.instagram.com/p/DfS5IjBGOOF/",
+  "lastImageUrl": "https://iili.io/nPveNTX.png"
 }
