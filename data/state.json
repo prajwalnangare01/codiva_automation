@@ -1,16 +1,7 @@
 {
-  "currentIndex": 100,
-  "totalPosted": 100,
+  "currentIndex": 101,
+  "totalPosted": 101,
   "history": [
-    {
-      "index": 0,
-      "day": 1,
-      "slot": 1,
-      "headline": "HTML document structure",
-      "permalink": "https://www.instagram.com/p/DdEQFW8m2ht/",
-      "imageUrl": "https://iili.io/nF1sH0u.png",
-      "postedAt": "2026-09-09T12:22:55.412Z"
-    },
     {
       "index": 1,
       "day": 1,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfQgWomlBlQ/",
       "imageUrl": "https://iili.io/n6HdvYG.png",
       "postedAt": "2026-11-02T23:38:44.054Z"
+    },
+    {
+      "index": 100,
+      "day": 51,
+      "slot": 1,
+      "headline": "reduce() method",
+      "permalink": "https://www.instagram.com/p/DfSuBXbDFuy/",
+      "imageUrl": "https://iili.io/nPevre1.png",
+      "postedAt": "2026-11-03T20:16:42.928Z"
     }
   ],
-  "lastPostedTopic": "Filtering real data",
-  "lastPostedAt": "2026-11-02T23:38:44.054Z",
-  "lastPermalink": "https://www.instagram.com/p/DfQgWomlBlQ/",
-  "lastImageUrl": "https://iili.io/n6HdvYG.png"
+  "lastPostedTopic": "reduce() method",
+  "lastPostedAt": "2026-11-03T20:16:42.928Z",
+  "lastPermalink": "https://www.instagram.com/p/DfSuBXbDFuy/",
+  "lastImageUrl": "https://iili.io/nPevre1.png"
 }
