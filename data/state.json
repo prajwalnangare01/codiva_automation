@@ -1,16 +1,7 @@
 {
-  "currentIndex": 103,
-  "totalPosted": 103,
+  "currentIndex": 104,
+  "totalPosted": 104,
   "history": [
-    {
-      "index": 3,
-      "day": 2,
-      "slot": 2,
-      "headline": "Heading hierarchy mistakes",
-      "permalink": "https://www.instagram.com/p/DdExkW_iTNh/",
-      "imageUrl": "https://iili.io/nFN3YJt.png",
-      "postedAt": "2026-09-09T17:15:30.130Z"
-    },
     {
       "index": 4,
       "day": 3,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfVUXUrgSsu/",
       "imageUrl": "https://iili.io/nsYk1xs.png",
       "postedAt": "2026-11-04T20:30:13.541Z"
+    },
+    {
+      "index": 103,
+      "day": 52,
+      "slot": 2,
+      "headline": "CHOOSING THE RIGHT METHOD",
+      "permalink": "https://www.instagram.com/p/DfVfnMdDXVE/",
+      "imageUrl": "https://iili.io/ns0QnyX.png",
+      "postedAt": "2026-11-04T22:08:30.664Z"
     }
   ],
-  "lastPostedTopic": "find() & some()",
-  "lastPostedAt": "2026-11-04T20:30:13.541Z",
-  "lastPermalink": "https://www.instagram.com/p/DfVUXUrgSsu/",
-  "lastImageUrl": "https://iili.io/nsYk1xs.png"
+  "lastPostedTopic": "CHOOSING THE RIGHT METHOD",
+  "lastPostedAt": "2026-11-04T22:08:30.664Z",
+  "lastPermalink": "https://www.instagram.com/p/DfVfnMdDXVE/",
+  "lastImageUrl": "https://iili.io/ns0QnyX.png"
 }
