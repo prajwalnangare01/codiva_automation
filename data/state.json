@@ -1,16 +1,7 @@
 {
-  "currentIndex": 104,
-  "totalPosted": 104,
+  "currentIndex": 105,
+  "totalPosted": 105,
   "history": [
-    {
-      "index": 4,
-      "day": 3,
-      "slot": 1,
-      "headline": "Semantic HTML",
-      "permalink": "https://www.instagram.com/p/DdFABomozLh/",
-      "imageUrl": "https://iili.io/nFev9St.png",
-      "postedAt": "2026-09-09T19:21:52.359Z"
-    },
     {
       "index": 5,
       "day": 3,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfVfnMdDXVE/",
       "imageUrl": "https://iili.io/ns0QnyX.png",
       "postedAt": "2026-11-04T22:08:30.664Z"
+    },
+    {
+      "index": 104,
+      "day": 53,
+      "slot": 1,
+      "headline": "What is the DOM?",
+      "permalink": "https://www.instagram.com/p/DfX7DNDjWzM/",
+      "imageUrl": "https://iili.io/nQriw3F.png",
+      "postedAt": "2026-11-05T20:46:41.427Z"
     }
   ],
-  "lastPostedTopic": "CHOOSING THE RIGHT METHOD",
-  "lastPostedAt": "2026-11-04T22:08:30.664Z",
-  "lastPermalink": "https://www.instagram.com/p/DfVfnMdDXVE/",
-  "lastImageUrl": "https://iili.io/ns0QnyX.png"
+  "lastPostedTopic": "What is the DOM?",
+  "lastPostedAt": "2026-11-05T20:46:41.427Z",
+  "lastPermalink": "https://www.instagram.com/p/DfX7DNDjWzM/",
+  "lastImageUrl": "https://iili.io/nQriw3F.png"
 }
