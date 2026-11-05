@@ -1,16 +1,7 @@
 {
-  "currentIndex": 105,
-  "totalPosted": 105,
+  "currentIndex": 106,
+  "totalPosted": 106,
   "history": [
-    {
-      "index": 5,
-      "day": 3,
-      "slot": 2,
-      "headline": "<DIV> VS SEMANTIC ELEMENTS",
-      "permalink": "https://www.instagram.com/p/DdHjoq9m8Mf/",
-      "imageUrl": "https://iili.io/nKSlwBf.png",
-      "postedAt": "2026-09-10T19:11:31.664Z"
-    },
     {
       "index": 6,
       "day": 4,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfX7DNDjWzM/",
       "imageUrl": "https://iili.io/nQriw3F.png",
       "postedAt": "2026-11-05T20:46:41.427Z"
+    },
+    {
+      "index": 105,
+      "day": 53,
+      "slot": 2,
+      "headline": "HTML → DOM TREE",
+      "permalink": "https://www.instagram.com/p/DfYEnvdjTT6/",
+      "imageUrl": "https://iili.io/nQZ9BPS.png",
+      "postedAt": "2026-11-05T22:10:20.132Z"
     }
   ],
-  "lastPostedTopic": "What is the DOM?",
-  "lastPostedAt": "2026-11-05T20:46:41.427Z",
-  "lastPermalink": "https://www.instagram.com/p/DfX7DNDjWzM/",
-  "lastImageUrl": "https://iili.io/nQriw3F.png"
+  "lastPostedTopic": "HTML → DOM TREE",
+  "lastPostedAt": "2026-11-05T22:10:20.132Z",
+  "lastPermalink": "https://www.instagram.com/p/DfYEnvdjTT6/",
+  "lastImageUrl": "https://iili.io/nQZ9BPS.png"
 }
