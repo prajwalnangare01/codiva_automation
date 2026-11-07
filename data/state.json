@@ -1,16 +1,7 @@
 {
-  "currentIndex": 106,
-  "totalPosted": 106,
+  "currentIndex": 107,
+  "totalPosted": 107,
   "history": [
-    {
-      "index": 6,
-      "day": 4,
-      "slot": 1,
-      "headline": "Links & navigation",
-      "permalink": "https://www.instagram.com/p/DdJ6C3lGgAd/",
-      "imageUrl": "https://iili.io/nfMhpEJ.png",
-      "postedAt": "2026-09-11T17:05:47.725Z"
-    },
     {
       "index": 7,
       "day": 4,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfYEnvdjTT6/",
       "imageUrl": "https://iili.io/nQZ9BPS.png",
       "postedAt": "2026-11-05T22:10:20.132Z"
+    },
+    {
+      "index": 106,
+      "day": 54,
+      "slot": 1,
+      "headline": "DOM selection",
+      "permalink": "https://www.instagram.com/p/Dfcy4ESjSVm/",
+      "imageUrl": "https://iili.io/nDfeSb1.png",
+      "postedAt": "2026-11-07T18:11:29.953Z"
     }
   ],
-  "lastPostedTopic": "HTML → DOM TREE",
-  "lastPostedAt": "2026-11-05T22:10:20.132Z",
-  "lastPermalink": "https://www.instagram.com/p/DfYEnvdjTT6/",
-  "lastImageUrl": "https://iili.io/nQZ9BPS.png"
+  "lastPostedTopic": "DOM selection",
+  "lastPostedAt": "2026-11-07T18:11:29.953Z",
+  "lastPermalink": "https://www.instagram.com/p/Dfcy4ESjSVm/",
+  "lastImageUrl": "https://iili.io/nDfeSb1.png"
 }
