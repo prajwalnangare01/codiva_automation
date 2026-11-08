@@ -1,16 +1,7 @@
 {
-  "currentIndex": 109,
-  "totalPosted": 109,
+  "currentIndex": 110,
+  "totalPosted": 110,
   "history": [
-    {
-      "index": 9,
-      "day": 5,
-      "slot": 2,
-      "headline": "ALT + LAZY LOADING",
-      "permalink": "https://www.instagram.com/p/DdMpBBEmseD/",
-      "imageUrl": "https://iili.io/nqfat0F.png",
-      "postedAt": "2026-09-12T18:34:42.662Z"
-    },
     {
       "index": 10,
       "day": 6,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DffaBwalKT-/",
       "imageUrl": "https://iili.io/nb7XORj.png",
       "postedAt": "2026-11-08T18:32:04.195Z"
+    },
+    {
+      "index": 109,
+      "day": 55,
+      "slot": 2,
+      "headline": "Dynamic UI updates",
+      "permalink": "https://www.instagram.com/p/DffouSxlwAk/",
+      "imageUrl": "https://iili.io/nbaWOMB.png",
+      "postedAt": "2026-11-08T20:40:28.491Z"
     }
   ],
-  "lastPostedTopic": "DOM Manipulation",
-  "lastPostedAt": "2026-11-08T18:32:04.195Z",
-  "lastPermalink": "https://www.instagram.com/p/DffaBwalKT-/",
-  "lastImageUrl": "https://iili.io/nb7XORj.png"
+  "lastPostedTopic": "Dynamic UI updates",
+  "lastPostedAt": "2026-11-08T20:40:28.491Z",
+  "lastPermalink": "https://www.instagram.com/p/DffouSxlwAk/",
+  "lastImageUrl": "https://iili.io/nbaWOMB.png"
 }
