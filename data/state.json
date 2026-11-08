@@ -1,16 +1,7 @@
 {
-  "currentIndex": 108,
-  "totalPosted": 108,
+  "currentIndex": 109,
+  "totalPosted": 109,
   "history": [
-    {
-      "index": 8,
-      "day": 5,
-      "slot": 1,
-      "headline": "Images",
-      "permalink": "https://www.instagram.com/p/DdMaUKlIH0f/",
-      "imageUrl": "https://iili.io/nq3HZT7.png",
-      "postedAt": "2026-09-12T16:26:16.694Z"
-    },
     {
       "index": 9,
       "day": 5,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfdCKymGN7x/",
       "imageUrl": "https://iili.io/nDCzgJ2.png",
       "postedAt": "2026-11-07T20:25:07.423Z"
+    },
+    {
+      "index": 108,
+      "day": 55,
+      "slot": 1,
+      "headline": "DOM Manipulation",
+      "permalink": "https://www.instagram.com/p/DffaBwalKT-/",
+      "imageUrl": "https://iili.io/nb7XORj.png",
+      "postedAt": "2026-11-08T18:32:04.195Z"
     }
   ],
-  "lastPostedTopic": "QUERYSELECTOR VS GETELEMENTBYID",
-  "lastPostedAt": "2026-11-07T20:25:07.423Z",
-  "lastPermalink": "https://www.instagram.com/p/DfdCKymGN7x/",
-  "lastImageUrl": "https://iili.io/nDCzgJ2.png"
+  "lastPostedTopic": "DOM Manipulation",
+  "lastPostedAt": "2026-11-08T18:32:04.195Z",
+  "lastPermalink": "https://www.instagram.com/p/DffaBwalKT-/",
+  "lastImageUrl": "https://iili.io/nb7XORj.png"
 }
