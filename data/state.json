@@ -1,16 +1,7 @@
 {
-  "currentIndex": 113,
-  "totalPosted": 113,
+  "currentIndex": 114,
+  "totalPosted": 114,
   "history": [
-    {
-      "index": 13,
-      "day": 7,
-      "slot": 2,
-      "headline": "COMMON TABLE MISTAKES",
-      "permalink": "https://www.instagram.com/p/DdR_BWdAbdd/",
-      "imageUrl": "https://iili.io/nCHA0tn.png",
-      "postedAt": "2026-09-14T20:23:11.916Z"
-    },
     {
       "index": 14,
       "day": 8,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Dfkxd6tAWoM/",
       "imageUrl": "https://iili.io/nmOZ6N4.png",
       "postedAt": "2026-11-10T20:33:06.787Z"
+    },
+    {
+      "index": 113,
+      "day": 57,
+      "slot": 2,
+      "headline": "EVENT PROPAGATION EXPLAINED",
+      "permalink": "https://www.instagram.com/p/Dfk6lPXmFYL/",
+      "imageUrl": "https://iili.io/nmkuXfV.png",
+      "postedAt": "2026-11-10T21:52:45.871Z"
     }
   ],
-  "lastPostedTopic": "Event bubbling",
-  "lastPostedAt": "2026-11-10T20:33:06.787Z",
-  "lastPermalink": "https://www.instagram.com/p/Dfkxd6tAWoM/",
-  "lastImageUrl": "https://iili.io/nmOZ6N4.png"
+  "lastPostedTopic": "EVENT PROPAGATION EXPLAINED",
+  "lastPostedAt": "2026-11-10T21:52:45.871Z",
+  "lastPermalink": "https://www.instagram.com/p/Dfk6lPXmFYL/",
+  "lastImageUrl": "https://iili.io/nmkuXfV.png"
 }
