@@ -1,16 +1,7 @@
 {
-  "currentIndex": 115,
-  "totalPosted": 115,
+  "currentIndex": 116,
+  "totalPosted": 116,
   "history": [
-    {
-      "index": 15,
-      "day": 8,
-      "slot": 2,
-      "headline": "LABEL + FORM STRUCTURE",
-      "permalink": "https://www.instagram.com/p/DdUfn4fDPAa/",
-      "imageUrl": "https://iili.io/nnBsEu9.png",
-      "postedAt": "2026-09-15T19:46:33.257Z"
-    },
     {
       "index": 16,
       "day": 9,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfnUkLAGAJW/",
       "imageUrl": "https://iili.io/npMBG6u.png",
       "postedAt": "2026-11-11T20:18:18.505Z"
+    },
+    {
+      "index": 115,
+      "day": 58,
+      "slot": 2,
+      "headline": "DYNAMIC LIST EVENT BUG",
+      "permalink": "https://www.instagram.com/p/DfnnDsImNI5/",
+      "imageUrl": "https://iili.io/npWGJYG.png",
+      "postedAt": "2026-11-11T22:59:53.399Z"
     }
   ],
-  "lastPostedTopic": "Event delegation",
-  "lastPostedAt": "2026-11-11T20:18:18.505Z",
-  "lastPermalink": "https://www.instagram.com/p/DfnUkLAGAJW/",
-  "lastImageUrl": "https://iili.io/npMBG6u.png"
+  "lastPostedTopic": "DYNAMIC LIST EVENT BUG",
+  "lastPostedAt": "2026-11-11T22:59:53.399Z",
+  "lastPermalink": "https://www.instagram.com/p/DfnnDsImNI5/",
+  "lastImageUrl": "https://iili.io/npWGJYG.png"
 }
