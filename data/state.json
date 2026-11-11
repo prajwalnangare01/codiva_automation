@@ -1,16 +1,7 @@
 {
-  "currentIndex": 114,
-  "totalPosted": 114,
+  "currentIndex": 115,
+  "totalPosted": 115,
   "history": [
-    {
-      "index": 14,
-      "day": 8,
-      "slot": 1,
-      "headline": "Forms",
-      "permalink": "https://www.instagram.com/p/DdURn-dICPf/",
-      "imageUrl": "https://iili.io/nnFrkMP.png",
-      "postedAt": "2026-09-15T17:44:15.037Z"
-    },
     {
       "index": 15,
       "day": 8,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Dfk6lPXmFYL/",
       "imageUrl": "https://iili.io/nmkuXfV.png",
       "postedAt": "2026-11-10T21:52:45.871Z"
+    },
+    {
+      "index": 114,
+      "day": 58,
+      "slot": 1,
+      "headline": "Event delegation",
+      "permalink": "https://www.instagram.com/p/DfnUkLAGAJW/",
+      "imageUrl": "https://iili.io/npMBG6u.png",
+      "postedAt": "2026-11-11T20:18:18.505Z"
     }
   ],
-  "lastPostedTopic": "EVENT PROPAGATION EXPLAINED",
-  "lastPostedAt": "2026-11-10T21:52:45.871Z",
-  "lastPermalink": "https://www.instagram.com/p/Dfk6lPXmFYL/",
-  "lastImageUrl": "https://iili.io/nmkuXfV.png"
+  "lastPostedTopic": "Event delegation",
+  "lastPostedAt": "2026-11-11T20:18:18.505Z",
+  "lastPermalink": "https://www.instagram.com/p/DfnUkLAGAJW/",
+  "lastImageUrl": "https://iili.io/npMBG6u.png"
 }
