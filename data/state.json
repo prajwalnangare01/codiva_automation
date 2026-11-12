@@ -1,16 +1,7 @@
 {
-  "currentIndex": 116,
-  "totalPosted": 116,
+  "currentIndex": 117,
+  "totalPosted": 117,
   "history": [
-    {
-      "index": 16,
-      "day": 9,
-      "slot": 1,
-      "headline": "Input types",
-      "permalink": "https://www.instagram.com/p/DdW2HmIFOxx/",
-      "imageUrl": "https://iili.io/noHRR7j.png",
-      "postedAt": "2026-09-16T17:41:35.869Z"
-    },
     {
       "index": 17,
       "day": 9,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfnnDsImNI5/",
       "imageUrl": "https://iili.io/npWGJYG.png",
       "postedAt": "2026-11-11T22:59:53.399Z"
+    },
+    {
+      "index": 116,
+      "day": 59,
+      "slot": 1,
+      "headline": "Forms with JS",
+      "permalink": "https://www.instagram.com/p/Dfp-Moel2i7/",
+      "imageUrl": "https://iili.io/nyHyBON.png",
+      "postedAt": "2026-11-12T21:00:32.943Z"
     }
   ],
-  "lastPostedTopic": "DYNAMIC LIST EVENT BUG",
-  "lastPostedAt": "2026-11-11T22:59:53.399Z",
-  "lastPermalink": "https://www.instagram.com/p/DfnnDsImNI5/",
-  "lastImageUrl": "https://iili.io/npWGJYG.png"
+  "lastPostedTopic": "Forms with JS",
+  "lastPostedAt": "2026-11-12T21:00:32.943Z",
+  "lastPermalink": "https://www.instagram.com/p/Dfp-Moel2i7/",
+  "lastImageUrl": "https://iili.io/nyHyBON.png"
 }
