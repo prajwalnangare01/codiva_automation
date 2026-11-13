@@ -1,16 +1,7 @@
 {
-  "currentIndex": 118,
-  "totalPosted": 118,
+  "currentIndex": 119,
+  "totalPosted": 119,
   "history": [
-    {
-      "index": 18,
-      "day": 10,
-      "slot": 1,
-      "headline": "Script & meta tags",
-      "permalink": "https://www.instagram.com/p/Ddb8AaInTzy/",
-      "imageUrl": "https://iili.io/nzwxzEG.png",
-      "postedAt": "2026-09-18T17:09:16.419Z"
-    },
     {
       "index": 19,
       "day": 10,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfsgOBID2P1/",
       "imageUrl": "https://iili.io/nyQtIdN.png",
       "postedAt": "2026-11-13T20:36:20.249Z"
+    },
+    {
+      "index": 118,
+      "day": 60,
+      "slot": 1,
+      "headline": "LocalStorage",
+      "permalink": "https://www.instagram.com/p/DfsrVYtDX-s/",
+      "imageUrl": "https://iili.io/nytEQ5X.png",
+      "postedAt": "2026-11-13T22:13:32.371Z"
     }
   ],
-  "lastPostedTopic": "CLIENT-SIDE VALIDATION",
-  "lastPostedAt": "2026-11-13T20:36:20.249Z",
-  "lastPermalink": "https://www.instagram.com/p/DfsgOBID2P1/",
-  "lastImageUrl": "https://iili.io/nyQtIdN.png"
+  "lastPostedTopic": "LocalStorage",
+  "lastPostedAt": "2026-11-13T22:13:32.371Z",
+  "lastPermalink": "https://www.instagram.com/p/DfsrVYtDX-s/",
+  "lastImageUrl": "https://iili.io/nytEQ5X.png"
 }
