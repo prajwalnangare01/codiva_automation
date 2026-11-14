@@ -1,16 +1,7 @@
 {
-  "currentIndex": 119,
-  "totalPosted": 119,
+  "currentIndex": 120,
+  "totalPosted": 120,
   "history": [
-    {
-      "index": 19,
-      "day": 10,
-      "slot": 2,
-      "headline": "async vs defer",
-      "permalink": "https://www.instagram.com/p/DdcJkQhGNAD/",
-      "imageUrl": "https://iili.io/nz8thX4.png",
-      "postedAt": "2026-09-18T19:07:46.733Z"
-    },
     {
       "index": 20,
       "day": 11,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DfsrVYtDX-s/",
       "imageUrl": "https://iili.io/nytEQ5X.png",
       "postedAt": "2026-11-13T22:13:32.371Z"
+    },
+    {
+      "index": 119,
+      "day": 60,
+      "slot": 2,
+      "headline": "BUILDING PERSISTENT BROWSER DATA",
+      "permalink": "https://www.instagram.com/p/Dfu4sNfF16Z/",
+      "imageUrl": "https://iili.io/o9SPTGI.png",
+      "postedAt": "2026-11-14T18:48:37.205Z"
     }
   ],
-  "lastPostedTopic": "LocalStorage",
-  "lastPostedAt": "2026-11-13T22:13:32.371Z",
-  "lastPermalink": "https://www.instagram.com/p/DfsrVYtDX-s/",
-  "lastImageUrl": "https://iili.io/nytEQ5X.png"
+  "lastPostedTopic": "BUILDING PERSISTENT BROWSER DATA",
+  "lastPostedAt": "2026-11-14T18:48:37.205Z",
+  "lastPermalink": "https://www.instagram.com/p/Dfu4sNfF16Z/",
+  "lastImageUrl": "https://iili.io/o9SPTGI.png"
 }
