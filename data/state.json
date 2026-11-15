@@ -1,16 +1,7 @@
 {
-  "currentIndex": 122,
-  "totalPosted": 122,
+  "currentIndex": 123,
+  "totalPosted": 123,
   "history": [
-    {
-      "index": 22,
-      "day": 12,
-      "slot": 1,
-      "headline": "Specificity",
-      "permalink": "https://www.instagram.com/p/DdhEGxSDQ4E/",
-      "imageUrl": "https://iili.io/nTrsFzF.png",
-      "postedAt": "2026-09-20T16:56:13.370Z"
-    },
     {
       "index": 23,
       "day": 12,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Dfxhzmekxhy/",
       "imageUrl": "https://iili.io/oHhcSKg.png",
       "postedAt": "2026-11-15T19:26:24.462Z"
+    },
+    {
+      "index": 122,
+      "day": 62,
+      "slot": 1,
+      "headline": "Callbacks",
+      "permalink": "https://www.instagram.com/p/Dfxt0gzGigi/",
+      "imageUrl": "https://iili.io/oHwrcva.png",
+      "postedAt": "2026-11-15T21:11:22.510Z"
     }
   ],
-  "lastPostedTopic": "JSON VS JAVASCRIPT OBJECT",
-  "lastPostedAt": "2026-11-15T19:26:24.462Z",
-  "lastPermalink": "https://www.instagram.com/p/Dfxhzmekxhy/",
-  "lastImageUrl": "https://iili.io/oHhcSKg.png"
+  "lastPostedTopic": "Callbacks",
+  "lastPostedAt": "2026-11-15T21:11:22.510Z",
+  "lastPermalink": "https://www.instagram.com/p/Dfxt0gzGigi/",
+  "lastImageUrl": "https://iili.io/oHwrcva.png"
 }
