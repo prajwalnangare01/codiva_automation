@@ -1,16 +1,7 @@
 {
-  "currentIndex": 123,
-  "totalPosted": 123,
+  "currentIndex": 124,
+  "totalPosted": 124,
   "history": [
-    {
-      "index": 23,
-      "day": 12,
-      "slot": 2,
-      "headline": "WHY CSS ISN'T APPLYING",
-      "permalink": "https://www.instagram.com/p/DdhSAkjjX-I/",
-      "imageUrl": "https://iili.io/nT6sUQ9.png",
-      "postedAt": "2026-09-20T18:57:42.552Z"
-    },
     {
       "index": 24,
       "day": 13,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Dfxt0gzGigi/",
       "imageUrl": "https://iili.io/oHwrcva.png",
       "postedAt": "2026-11-15T21:11:22.510Z"
+    },
+    {
+      "index": 123,
+      "day": 62,
+      "slot": 2,
+      "headline": "ESCAPING CALLBACK HELL",
+      "permalink": "https://www.instagram.com/p/Df0fAeYl7qu/",
+      "imageUrl": "https://iili.io/odi59xR.png",
+      "postedAt": "2026-11-16T22:59:36.815Z"
     }
   ],
-  "lastPostedTopic": "Callbacks",
-  "lastPostedAt": "2026-11-15T21:11:22.510Z",
-  "lastPermalink": "https://www.instagram.com/p/Dfxt0gzGigi/",
-  "lastImageUrl": "https://iili.io/oHwrcva.png"
+  "lastPostedTopic": "ESCAPING CALLBACK HELL",
+  "lastPostedAt": "2026-11-16T22:59:36.815Z",
+  "lastPermalink": "https://www.instagram.com/p/Df0fAeYl7qu/",
+  "lastImageUrl": "https://iili.io/odi59xR.png"
 }
