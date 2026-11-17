@@ -1,16 +1,7 @@
 {
-  "currentIndex": 124,
-  "totalPosted": 124,
+  "currentIndex": 125,
+  "totalPosted": 125,
   "history": [
-    {
-      "index": 24,
-      "day": 13,
-      "slot": 1,
-      "headline": "Box model",
-      "permalink": "https://www.instagram.com/p/Ddj2KnEIIF_/",
-      "imageUrl": "https://iili.io/nuukYPf.png",
-      "postedAt": "2026-09-21T18:52:09.239Z"
-    },
     {
       "index": 25,
       "day": 13,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Df0fAeYl7qu/",
       "imageUrl": "https://iili.io/odi59xR.png",
       "postedAt": "2026-11-16T22:59:36.815Z"
+    },
+    {
+      "index": 124,
+      "day": 63,
+      "slot": 1,
+      "headline": "Promises",
+      "permalink": "https://www.instagram.com/p/Df0oe0GDFum/",
+      "imageUrl": "https://iili.io/odLcDns.png",
+      "postedAt": "2026-11-17T00:22:26.425Z"
     }
   ],
-  "lastPostedTopic": "ESCAPING CALLBACK HELL",
-  "lastPostedAt": "2026-11-16T22:59:36.815Z",
-  "lastPermalink": "https://www.instagram.com/p/Df0fAeYl7qu/",
-  "lastImageUrl": "https://iili.io/odi59xR.png"
+  "lastPostedTopic": "Promises",
+  "lastPostedAt": "2026-11-17T00:22:26.425Z",
+  "lastPermalink": "https://www.instagram.com/p/Df0oe0GDFum/",
+  "lastImageUrl": "https://iili.io/odLcDns.png"
 }
