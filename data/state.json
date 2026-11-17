@@ -1,16 +1,7 @@
 {
-  "currentIndex": 126,
-  "totalPosted": 126,
+  "currentIndex": 127,
+  "totalPosted": 127,
   "history": [
-    {
-      "index": 26,
-      "day": 14,
-      "slot": 1,
-      "headline": "Width & height",
-      "permalink": "https://www.instagram.com/p/DdmS-FYmGhh/",
-      "imageUrl": "https://iili.io/nu4MSql.png",
-      "postedAt": "2026-09-22T17:42:23.969Z"
-    },
     {
       "index": 27,
       "day": 14,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Df28wk0DQ1x/",
       "imageUrl": "https://iili.io/o2sWukP.png",
       "postedAt": "2026-11-17T21:58:05.858Z"
+    },
+    {
+      "index": 126,
+      "day": 64,
+      "slot": 1,
+      "headline": "async/await",
+      "permalink": "https://www.instagram.com/p/Df3IRdGjd7V/",
+      "imageUrl": "https://iili.io/o2QK0EQ.png",
+      "postedAt": "2026-11-17T23:38:47.430Z"
     }
   ],
-  "lastPostedTopic": "THE 3 PROMISE STATES",
-  "lastPostedAt": "2026-11-17T21:58:05.858Z",
-  "lastPermalink": "https://www.instagram.com/p/Df28wk0DQ1x/",
-  "lastImageUrl": "https://iili.io/o2sWukP.png"
+  "lastPostedTopic": "async/await",
+  "lastPostedAt": "2026-11-17T23:38:47.430Z",
+  "lastPermalink": "https://www.instagram.com/p/Df3IRdGjd7V/",
+  "lastImageUrl": "https://iili.io/o2QK0EQ.png"
 }
