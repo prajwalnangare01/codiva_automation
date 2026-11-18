@@ -1,16 +1,7 @@
 {
-  "currentIndex": 128,
-  "totalPosted": 128,
+  "currentIndex": 129,
+  "totalPosted": 129,
   "history": [
-    {
-      "index": 28,
-      "day": 15,
-      "slot": 1,
-      "headline": "Display",
-      "permalink": "https://www.instagram.com/p/Ddo5QatHZCS/",
-      "imageUrl": "https://iili.io/nAcju14.png",
-      "postedAt": "2026-09-23T17:55:21.564Z"
-    },
     {
       "index": 29,
       "day": 15,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Df5egssiRB_/",
       "imageUrl": "https://iili.io/o3LTUgV.png",
       "postedAt": "2026-11-18T21:31:30.808Z"
+    },
+    {
+      "index": 128,
+      "day": 65,
+      "slot": 1,
+      "headline": "Fetch API",
+      "permalink": "https://www.instagram.com/p/Df5oq_zjb3g/",
+      "imageUrl": "https://iili.io/o3Z06cF.png",
+      "postedAt": "2026-11-18T23:00:19.805Z"
     }
   ],
-  "lastPostedTopic": "PROMISE VS ASYNC/AWAIT",
-  "lastPostedAt": "2026-11-18T21:31:30.808Z",
-  "lastPermalink": "https://www.instagram.com/p/Df5egssiRB_/",
-  "lastImageUrl": "https://iili.io/o3LTUgV.png"
+  "lastPostedTopic": "Fetch API",
+  "lastPostedAt": "2026-11-18T23:00:19.805Z",
+  "lastPermalink": "https://www.instagram.com/p/Df5oq_zjb3g/",
+  "lastImageUrl": "https://iili.io/o3Z06cF.png"
 }
