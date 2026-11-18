@@ -1,16 +1,7 @@
 {
-  "currentIndex": 127,
-  "totalPosted": 127,
+  "currentIndex": 128,
+  "totalPosted": 128,
   "history": [
-    {
-      "index": 27,
-      "day": 14,
-      "slot": 2,
-      "headline": "% VS PX VS VW",
-      "permalink": "https://www.instagram.com/p/DdmhekxGOHV/",
-      "imageUrl": "https://iili.io/nuPVr6x.png",
-      "postedAt": "2026-09-22T19:49:06.532Z"
-    },
     {
       "index": 28,
       "day": 15,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Df3IRdGjd7V/",
       "imageUrl": "https://iili.io/o2QK0EQ.png",
       "postedAt": "2026-11-17T23:38:47.430Z"
+    },
+    {
+      "index": 127,
+      "day": 64,
+      "slot": 2,
+      "headline": "PROMISE VS ASYNC/AWAIT",
+      "permalink": "https://www.instagram.com/p/Df5egssiRB_/",
+      "imageUrl": "https://iili.io/o3LTUgV.png",
+      "postedAt": "2026-11-18T21:31:30.808Z"
     }
   ],
-  "lastPostedTopic": "async/await",
-  "lastPostedAt": "2026-11-17T23:38:47.430Z",
-  "lastPermalink": "https://www.instagram.com/p/Df3IRdGjd7V/",
-  "lastImageUrl": "https://iili.io/o2QK0EQ.png"
+  "lastPostedTopic": "PROMISE VS ASYNC/AWAIT",
+  "lastPostedAt": "2026-11-18T21:31:30.808Z",
+  "lastPermalink": "https://www.instagram.com/p/Df5egssiRB_/",
+  "lastImageUrl": "https://iili.io/o3LTUgV.png"
 }
