@@ -1,16 +1,7 @@
 {
-  "currentIndex": 130,
-  "totalPosted": 130,
+  "currentIndex": 131,
+  "totalPosted": 131,
   "history": [
-    {
-      "index": 30,
-      "day": 16,
-      "slot": 1,
-      "headline": "Position",
-      "permalink": "https://www.instagram.com/p/DdreAiJjfXM/",
-      "imageUrl": "https://iili.io/nApSnYN.png",
-      "postedAt": "2026-09-24T17:54:59.992Z"
-    },
     {
       "index": 31,
       "day": 16,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Df8EzauF-EO/",
       "imageUrl": "https://iili.io/oFRhS6v.png",
       "postedAt": "2026-11-19T21:44:35.237Z"
+    },
+    {
+      "index": 130,
+      "day": 66,
+      "slot": 1,
+      "headline": "API Errors",
+      "permalink": "https://www.instagram.com/p/Df8O142DPEJ/",
+      "imageUrl": "https://iili.io/oF5imoG.png",
+      "postedAt": "2026-11-19T23:12:18.842Z"
     }
   ],
-  "lastPostedTopic": "GET API REQUESTS",
-  "lastPostedAt": "2026-11-19T21:44:35.237Z",
-  "lastPermalink": "https://www.instagram.com/p/Df8EzauF-EO/",
-  "lastImageUrl": "https://iili.io/oFRhS6v.png"
+  "lastPostedTopic": "API Errors",
+  "lastPostedAt": "2026-11-19T23:12:18.842Z",
+  "lastPermalink": "https://www.instagram.com/p/Df8O142DPEJ/",
+  "lastImageUrl": "https://iili.io/oF5imoG.png"
 }
