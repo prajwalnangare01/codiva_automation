@@ -1,16 +1,7 @@
 {
-  "currentIndex": 131,
-  "totalPosted": 131,
+  "currentIndex": 132,
+  "totalPosted": 132,
   "history": [
-    {
-      "index": 31,
-      "day": 16,
-      "slot": 2,
-      "headline": "RELATIVE VS ABSOLUTE",
-      "permalink": "https://www.instagram.com/p/DdrsxBVnWxM/",
-      "imageUrl": "https://iili.io/nRHJdEG.png",
-      "postedAt": "2026-09-24T20:03:56.961Z"
-    },
     {
       "index": 32,
       "day": 17,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Df8O142DPEJ/",
       "imageUrl": "https://iili.io/oF5imoG.png",
       "postedAt": "2026-11-19T23:12:18.842Z"
+    },
+    {
+      "index": 131,
+      "day": 66,
+      "slot": 2,
+      "headline": "PROPER HTTP ERROR HANDLING",
+      "permalink": "https://www.instagram.com/p/Df-nhOVDTtG/",
+      "imageUrl": "https://iili.io/oFPe2Hb.png",
+      "postedAt": "2026-11-20T21:26:27.234Z"
     }
   ],
-  "lastPostedTopic": "API Errors",
-  "lastPostedAt": "2026-11-19T23:12:18.842Z",
-  "lastPermalink": "https://www.instagram.com/p/Df8O142DPEJ/",
-  "lastImageUrl": "https://iili.io/oF5imoG.png"
+  "lastPostedTopic": "PROPER HTTP ERROR HANDLING",
+  "lastPostedAt": "2026-11-20T21:26:27.234Z",
+  "lastPermalink": "https://www.instagram.com/p/Df-nhOVDTtG/",
+  "lastImageUrl": "https://iili.io/oFPe2Hb.png"
 }
