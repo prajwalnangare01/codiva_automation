@@ -1,16 +1,7 @@
 {
-  "currentIndex": 133,
-  "totalPosted": 133,
+  "currentIndex": 134,
+  "totalPosted": 134,
   "history": [
-    {
-      "index": 33,
-      "day": 17,
-      "slot": 2,
-      "headline": "WHY Z-INDEX DOESN'T WORK",
-      "permalink": "https://www.instagram.com/p/DduRvKjkiKU/",
-      "imageUrl": "https://iili.io/nRGoO6Q.png",
-      "postedAt": "2026-09-25T20:05:28.373Z"
-    },
     {
       "index": 34,
       "day": 18,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/Df-wg5PmoSt/",
       "imageUrl": "https://iili.io/oFiNsxp.png",
       "postedAt": "2026-11-20T22:45:02.180Z"
+    },
+    {
+      "index": 133,
+      "day": 67,
+      "slot": 2,
+      "headline": "CALL STACK + WEB APIS",
+      "permalink": "https://www.instagram.com/p/DgBEn5ZIWuX/",
+      "imageUrl": "https://iili.io/oKxzGbS.png",
+      "postedAt": "2026-11-21T20:19:15.542Z"
     }
   ],
-  "lastPostedTopic": "Event loop",
-  "lastPostedAt": "2026-11-20T22:45:02.180Z",
-  "lastPermalink": "https://www.instagram.com/p/Df-wg5PmoSt/",
-  "lastImageUrl": "https://iili.io/oFiNsxp.png"
+  "lastPostedTopic": "CALL STACK + WEB APIS",
+  "lastPostedAt": "2026-11-21T20:19:15.542Z",
+  "lastPermalink": "https://www.instagram.com/p/DgBEn5ZIWuX/",
+  "lastImageUrl": "https://iili.io/oKxzGbS.png"
 }
