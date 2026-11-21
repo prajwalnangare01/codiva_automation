@@ -1,16 +1,7 @@
 {
-  "currentIndex": 134,
-  "totalPosted": 134,
+  "currentIndex": 135,
+  "totalPosted": 135,
   "history": [
-    {
-      "index": 34,
-      "day": 18,
-      "slot": 1,
-      "headline": "Flexbox",
-      "permalink": "https://www.instagram.com/p/DdwjuU0FNOS/",
-      "imageUrl": "https://iili.io/nRy1yhu.png",
-      "postedAt": "2026-09-26T17:21:06.839Z"
-    },
     {
       "index": 35,
       "day": 18,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgBEn5ZIWuX/",
       "imageUrl": "https://iili.io/oKxzGbS.png",
       "postedAt": "2026-11-21T20:19:15.542Z"
+    },
+    {
+      "index": 134,
+      "day": 68,
+      "slot": 1,
+      "headline": "Closures",
+      "permalink": "https://www.instagram.com/p/DgBOvH4kvcG/",
+      "imageUrl": "https://iili.io/oKzGpWu.png",
+      "postedAt": "2026-11-21T21:47:37.975Z"
     }
   ],
-  "lastPostedTopic": "CALL STACK + WEB APIS",
-  "lastPostedAt": "2026-11-21T20:19:15.542Z",
-  "lastPermalink": "https://www.instagram.com/p/DgBEn5ZIWuX/",
-  "lastImageUrl": "https://iili.io/oKxzGbS.png"
+  "lastPostedTopic": "Closures",
+  "lastPostedAt": "2026-11-21T21:47:37.975Z",
+  "lastPermalink": "https://www.instagram.com/p/DgBOvH4kvcG/",
+  "lastImageUrl": "https://iili.io/oKzGpWu.png"
 }
