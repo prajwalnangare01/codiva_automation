@@ -1,16 +1,7 @@
 {
-  "currentIndex": 136,
-  "totalPosted": 136,
+  "currentIndex": 137,
+  "totalPosted": 137,
   "history": [
-    {
-      "index": 36,
-      "day": 19,
-      "slot": 1,
-      "headline": "Flexbox spacing",
-      "permalink": "https://www.instagram.com/p/DdzMUPxmP_B/",
-      "imageUrl": "https://iili.io/n5L3sAF.png",
-      "postedAt": "2026-09-27T17:54:19.233Z"
-    },
     {
       "index": 37,
       "day": 19,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgDqkiooCLZ/",
       "imageUrl": "https://iili.io/oKeDrpp.png",
       "postedAt": "2026-11-22T20:29:18.491Z"
+    },
+    {
+      "index": 136,
+      "day": 69,
+      "slot": 1,
+      "headline": "Why React?",
+      "permalink": "https://www.instagram.com/p/DgD0eiZGo1o/",
+      "imageUrl": "https://iili.io/oKvcgY7.png",
+      "postedAt": "2026-11-22T21:55:51.991Z"
     }
   ],
-  "lastPostedTopic": "CLOSURES IN REAL APPLICATIONS",
-  "lastPostedAt": "2026-11-22T20:29:18.491Z",
-  "lastPermalink": "https://www.instagram.com/p/DgDqkiooCLZ/",
-  "lastImageUrl": "https://iili.io/oKeDrpp.png"
+  "lastPostedTopic": "Why React?",
+  "lastPostedAt": "2026-11-22T21:55:51.991Z",
+  "lastPermalink": "https://www.instagram.com/p/DgD0eiZGo1o/",
+  "lastImageUrl": "https://iili.io/oKvcgY7.png"
 }
