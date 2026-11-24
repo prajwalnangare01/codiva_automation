@@ -1,16 +1,7 @@
 {
-  "currentIndex": 139,
-  "totalPosted": 139,
+  "currentIndex": 140,
+  "totalPosted": 140,
   "history": [
-    {
-      "index": 39,
-      "day": 20,
-      "slot": 2,
-      "headline": "GRID FUNDAMENTALS",
-      "permalink": "https://www.instagram.com/p/Dd2OzhrGPN4/",
-      "imageUrl": "https://iili.io/n7ZnLDF.png",
-      "postedAt": "2026-09-28T22:13:46.682Z"
-    },
     {
       "index": 40,
       "day": 21,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgG8o5dFc5v/",
       "imageUrl": "https://iili.io/ofoY9oX.png",
       "postedAt": "2026-11-24T03:04:55.340Z"
+    },
+    {
+      "index": 139,
+      "day": 70,
+      "slot": 2,
+      "headline": "THE NESTED COMPONENT TRAP",
+      "permalink": "https://www.instagram.com/p/DgJG_hFnUnb/",
+      "imageUrl": "https://iili.io/ofOzhil.png",
+      "postedAt": "2026-11-24T23:13:55.129Z"
     }
   ],
-  "lastPostedTopic": "React Components",
-  "lastPostedAt": "2026-11-24T03:04:55.340Z",
-  "lastPermalink": "https://www.instagram.com/p/DgG8o5dFc5v/",
-  "lastImageUrl": "https://iili.io/ofoY9oX.png"
+  "lastPostedTopic": "THE NESTED COMPONENT TRAP",
+  "lastPostedAt": "2026-11-24T23:13:55.129Z",
+  "lastPermalink": "https://www.instagram.com/p/DgJG_hFnUnb/",
+  "lastImageUrl": "https://iili.io/ofOzhil.png"
 }
