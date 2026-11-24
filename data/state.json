@@ -1,16 +1,7 @@
 {
-  "currentIndex": 138,
-  "totalPosted": 138,
+  "currentIndex": 139,
+  "totalPosted": 139,
   "history": [
-    {
-      "index": 38,
-      "day": 20,
-      "slot": 1,
-      "headline": "CSS Grid",
-      "permalink": "https://www.instagram.com/p/Dd2A26Bly-q/",
-      "imageUrl": "https://iili.io/n7is0Cl.png",
-      "postedAt": "2026-09-28T20:11:54.930Z"
-    },
     {
       "index": 39,
       "day": 20,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgGvSBeDrD0/",
       "imageUrl": "https://iili.io/ofBbfvn.png",
       "postedAt": "2026-11-24T01:08:13.488Z"
+    },
+    {
+      "index": 138,
+      "day": 70,
+      "slot": 1,
+      "headline": "React Components",
+      "permalink": "https://www.instagram.com/p/DgG8o5dFc5v/",
+      "imageUrl": "https://iili.io/ofoY9oX.png",
+      "postedAt": "2026-11-24T03:04:55.340Z"
     }
   ],
-  "lastPostedTopic": "REACT VS VANILLA JS",
-  "lastPostedAt": "2026-11-24T01:08:13.488Z",
-  "lastPermalink": "https://www.instagram.com/p/DgGvSBeDrD0/",
-  "lastImageUrl": "https://iili.io/ofBbfvn.png"
+  "lastPostedTopic": "React Components",
+  "lastPostedAt": "2026-11-24T03:04:55.340Z",
+  "lastPermalink": "https://www.instagram.com/p/DgG8o5dFc5v/",
+  "lastImageUrl": "https://iili.io/ofoY9oX.png"
 }
