@@ -1,16 +1,7 @@
 {
-  "currentIndex": 137,
-  "totalPosted": 137,
+  "currentIndex": 138,
+  "totalPosted": 138,
   "history": [
-    {
-      "index": 37,
-      "day": 19,
-      "slot": 2,
-      "headline": "GAP VS MARGINS",
-      "permalink": "https://www.instagram.com/p/DdzZibvDfxB/",
-      "imageUrl": "https://iili.io/n5Z5UhJ.png",
-      "postedAt": "2026-09-27T19:49:49.194Z"
-    },
     {
       "index": 38,
       "day": 20,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgD0eiZGo1o/",
       "imageUrl": "https://iili.io/oKvcgY7.png",
       "postedAt": "2026-11-22T21:55:51.991Z"
+    },
+    {
+      "index": 137,
+      "day": 69,
+      "slot": 2,
+      "headline": "REACT VS VANILLA JS",
+      "permalink": "https://www.instagram.com/p/DgGvSBeDrD0/",
+      "imageUrl": "https://iili.io/ofBbfvn.png",
+      "postedAt": "2026-11-24T01:08:13.488Z"
     }
   ],
-  "lastPostedTopic": "Why React?",
-  "lastPostedAt": "2026-11-22T21:55:51.991Z",
-  "lastPermalink": "https://www.instagram.com/p/DgD0eiZGo1o/",
-  "lastImageUrl": "https://iili.io/oKvcgY7.png"
+  "lastPostedTopic": "REACT VS VANILLA JS",
+  "lastPostedAt": "2026-11-24T01:08:13.488Z",
+  "lastPermalink": "https://www.instagram.com/p/DgGvSBeDrD0/",
+  "lastImageUrl": "https://iili.io/ofBbfvn.png"
 }
