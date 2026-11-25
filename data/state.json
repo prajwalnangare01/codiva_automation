@@ -1,16 +1,7 @@
 {
-  "currentIndex": 140,
-  "totalPosted": 140,
+  "currentIndex": 141,
+  "totalPosted": 141,
   "history": [
-    {
-      "index": 40,
-      "day": 21,
-      "slot": 1,
-      "headline": "Grid architecture",
-      "permalink": "https://www.instagram.com/p/Dd4cHHUmNng/",
-      "imageUrl": "https://iili.io/nYwoVXS.png",
-      "postedAt": "2026-09-29T18:48:32.753Z"
-    },
     {
       "index": 41,
       "day": 21,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgJG_hFnUnb/",
       "imageUrl": "https://iili.io/ofOzhil.png",
       "postedAt": "2026-11-24T23:13:55.129Z"
+    },
+    {
+      "index": 140,
+      "day": 71,
+      "slot": 1,
+      "headline": "JSX Syntax Rules",
+      "permalink": "https://www.instagram.com/p/DgJTfaTjP97/",
+      "imageUrl": "https://iili.io/ofeLjat.png",
+      "postedAt": "2026-11-25T01:03:04.447Z"
     }
   ],
-  "lastPostedTopic": "THE NESTED COMPONENT TRAP",
-  "lastPostedAt": "2026-11-24T23:13:55.129Z",
-  "lastPermalink": "https://www.instagram.com/p/DgJG_hFnUnb/",
-  "lastImageUrl": "https://iili.io/ofOzhil.png"
+  "lastPostedTopic": "JSX Syntax Rules",
+  "lastPostedAt": "2026-11-25T01:03:04.447Z",
+  "lastPermalink": "https://www.instagram.com/p/DgJTfaTjP97/",
+  "lastImageUrl": "https://iili.io/ofeLjat.png"
 }
