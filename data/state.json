@@ -1,16 +1,7 @@
 {
-  "currentIndex": 141,
-  "totalPosted": 141,
+  "currentIndex": 142,
+  "totalPosted": 142,
   "history": [
-    {
-      "index": 41,
-      "day": 21,
-      "slot": 2,
-      "headline": "GRID VS FLEXBOX",
-      "permalink": "https://www.instagram.com/p/Dd4q2bKknWx/",
-      "imageUrl": "https://iili.io/nYOgpVe.png",
-      "postedAt": "2026-09-29T20:57:19.752Z"
-    },
     {
       "index": 42,
       "day": 22,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgJTfaTjP97/",
       "imageUrl": "https://iili.io/ofeLjat.png",
       "postedAt": "2026-11-25T01:03:04.447Z"
+    },
+    {
+      "index": 141,
+      "day": 71,
+      "slot": 2,
+      "headline": "JSX RULES & MISTAKES",
+      "permalink": "https://www.instagram.com/p/DgLn6y_Ed5D/",
+      "imageUrl": "https://iili.io/oq2Qu8F.png",
+      "postedAt": "2026-11-25T22:40:03.866Z"
     }
   ],
-  "lastPostedTopic": "JSX Syntax Rules",
-  "lastPostedAt": "2026-11-25T01:03:04.447Z",
-  "lastPermalink": "https://www.instagram.com/p/DgJTfaTjP97/",
-  "lastImageUrl": "https://iili.io/ofeLjat.png"
+  "lastPostedTopic": "JSX RULES & MISTAKES",
+  "lastPostedAt": "2026-11-25T22:40:03.866Z",
+  "lastPermalink": "https://www.instagram.com/p/DgLn6y_Ed5D/",
+  "lastImageUrl": "https://iili.io/oq2Qu8F.png"
 }
