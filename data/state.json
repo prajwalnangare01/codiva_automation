@@ -1,16 +1,7 @@
 {
-  "currentIndex": 142,
-  "totalPosted": 142,
+  "currentIndex": 143,
+  "totalPosted": 143,
   "history": [
-    {
-      "index": 42,
-      "day": 22,
-      "slot": 1,
-      "headline": "Responsive design",
-      "permalink": "https://www.instagram.com/p/Dd7PjNFEtYt/",
-      "imageUrl": "https://iili.io/naMntQp.png",
-      "postedAt": "2026-09-30T20:56:30.214Z"
-    },
     {
       "index": 43,
       "day": 22,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgLn6y_Ed5D/",
       "imageUrl": "https://iili.io/oq2Qu8F.png",
       "postedAt": "2026-11-25T22:40:03.866Z"
+    },
+    {
+      "index": 142,
+      "day": 72,
+      "slot": 1,
+      "headline": "Props",
+      "permalink": "https://www.instagram.com/p/DgOLnIwjftp/",
+      "imageUrl": "https://iili.io/oqWWdYP.png",
+      "postedAt": "2026-11-26T22:30:25.245Z"
     }
   ],
-  "lastPostedTopic": "JSX RULES & MISTAKES",
-  "lastPostedAt": "2026-11-25T22:40:03.866Z",
-  "lastPermalink": "https://www.instagram.com/p/DgLn6y_Ed5D/",
-  "lastImageUrl": "https://iili.io/oq2Qu8F.png"
+  "lastPostedTopic": "Props",
+  "lastPostedAt": "2026-11-26T22:30:25.245Z",
+  "lastPermalink": "https://www.instagram.com/p/DgOLnIwjftp/",
+  "lastImageUrl": "https://iili.io/oqWWdYP.png"
 }
