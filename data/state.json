@@ -1,16 +1,7 @@
 {
-  "currentIndex": 143,
-  "totalPosted": 143,
+  "currentIndex": 144,
+  "totalPosted": 144,
   "history": [
-    {
-      "index": 43,
-      "day": 22,
-      "slot": 2,
-      "headline": "MOBILE-FIRST CSS",
-      "permalink": "https://www.instagram.com/p/Dd9m5ELAVqW/",
-      "imageUrl": "https://iili.io/ncFgi9S.png",
-      "postedAt": "2026-10-01T18:58:58.366Z"
-    },
     {
       "index": 44,
       "day": 23,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgOLnIwjftp/",
       "imageUrl": "https://iili.io/oqWWdYP.png",
       "postedAt": "2026-11-26T22:30:25.245Z"
+    },
+    {
+      "index": 143,
+      "day": 72,
+      "slot": 2,
+      "headline": "PASSING DATA CLEANLY",
+      "permalink": "https://www.instagram.com/p/DgOa4TdjbpD/",
+      "imageUrl": "https://iili.io/oqhzs3v.png",
+      "postedAt": "2026-11-27T00:43:49.541Z"
     }
   ],
-  "lastPostedTopic": "Props",
-  "lastPostedAt": "2026-11-26T22:30:25.245Z",
-  "lastPermalink": "https://www.instagram.com/p/DgOLnIwjftp/",
-  "lastImageUrl": "https://iili.io/oqWWdYP.png"
+  "lastPostedTopic": "PASSING DATA CLEANLY",
+  "lastPostedAt": "2026-11-27T00:43:49.541Z",
+  "lastPermalink": "https://www.instagram.com/p/DgOa4TdjbpD/",
+  "lastImageUrl": "https://iili.io/oqhzs3v.png"
 }
