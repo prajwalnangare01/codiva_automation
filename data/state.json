@@ -1,16 +1,7 @@
 {
-  "currentIndex": 145,
-  "totalPosted": 145,
+  "currentIndex": 146,
+  "totalPosted": 146,
   "history": [
-    {
-      "index": 45,
-      "day": 23,
-      "slot": 2,
-      "headline": "COMMON RESPONSIVE MISTAKES",
-      "permalink": "https://www.instagram.com/p/DeAYpDtgRF8/",
-      "imageUrl": "https://iili.io/nc45zfR.png",
-      "postedAt": "2026-10-02T20:52:08.381Z"
-    },
     {
       "index": 46,
       "day": 24,
@@ -901,10 +892,19 @@
       "permalink": "https://www.instagram.com/p/DgQui0-n74L/",
       "imageUrl": "https://iili.io/oqmpIGs.png",
       "postedAt": "2026-11-27T22:14:10.899Z"
+    },
+    {
+      "index": 145,
+      "day": 73,
+      "slot": 2,
+      "headline": "PROPS VS STATE",
+      "permalink": "https://www.instagram.com/p/DgQ71boCdfg/",
+      "imageUrl": "https://iili.io/oqyhTb9.png",
+      "postedAt": "2026-11-28T00:10:19.902Z"
     }
   ],
-  "lastPostedTopic": "State",
-  "lastPostedAt": "2026-11-27T22:14:10.899Z",
-  "lastPermalink": "https://www.instagram.com/p/DgQui0-n74L/",
-  "lastImageUrl": "https://iili.io/oqmpIGs.png"
+  "lastPostedTopic": "PROPS VS STATE",
+  "lastPostedAt": "2026-11-28T00:10:19.902Z",
+  "lastPermalink": "https://www.instagram.com/p/DgQ71boCdfg/",
+  "lastImageUrl": "https://iili.io/oqyhTb9.png"
 }
